@@ -1,16 +1,13 @@
 import React from 'react';
-
-
+import './component.css'
 const Button = (props) => {
-	console.log(props.style);
-	return(
-	<button 
-		style= {props.style} 
-		className = {props.type=='primary'? 'btn btn-primary' : 'btn btn-secondary'}
-		onClick= {props.action} > 
-		{props.title} 
-	</button>)
+    return(
+        <button
+        style={props.style}
+        className = {'btn btn-Primary'}
+        onClick = {props.action}>
+            {props.title}
+        </button>
+    )
 }
-
-
-export default Button;
+export default Button

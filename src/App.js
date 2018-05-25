@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FormContainer from './containers/FormContainer';
-
+import Form from './Forms/formA.jsx'
 class App extends Component {
-  render() {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+           title: 'React - Training'
+        };
+        this.alertBoxTest = this.alertBoxTest.bind(this);
+    }
+    alertBoxTest(){
+        this.setState({
+            title: this.state.title == 'Not Funky' ? 'Funky':'Not Funky'
+        });
+        //alert(temp);
+    }
+    render() {
+
     return (
-      <div className="col-md-6">
-        <h3> Sample Form Container </h3>
-        <FormContainer />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">{this.state.title}</h1>
+        </header>
+
+          <Form/>
+
       </div>
     );
   }
