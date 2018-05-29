@@ -15,11 +15,18 @@ import messages from './messages';
 import './HomePage.css';
 import Button from './components/Button.js';
 import Post from './components/Post.js';
+import {Provider} from 'react-redux';
+import store from './store.js';
+
+
+
+
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
   render() {
 
     return (
+      <Provider store={store}>
       <div>
         <header className="App-header">
           <h1>
@@ -29,7 +36,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <body className="App-body">
         <div >
           <div className="verticalDiv">
-            <Button title={"Add"}/>
+            <Button title={"Add"} action = {() => action('ADD_QUOTE')}/>
             <Button title={"Delete"}/>
           </div>
           <div>
@@ -38,7 +45,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         </div>
         </body>
       </div>
-
+      </Provider>
     );
   }
 }

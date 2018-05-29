@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {addQuote} from '../actions/homePageActions'
 import Table from  './Table.js';
 class Post extends Component{
   constructor(props){
@@ -14,7 +16,10 @@ class Post extends Component{
   }
   componentWillMount(){
     //call fetch quote at the start of the life cycle so we have a quote loaded up.
-    this.fetchQuote();
+     //this.props.addQuote();
+
+    //this.fetchQuote();
+    //store
   }
   fetchQuote(){
     fetch('http://ne-dev-pegasus-quotes.azurewebsites.net/api/values')
@@ -48,6 +53,7 @@ class Post extends Component{
   }
   render(){
     return(
+
       <div>
         {
           <button onClick = {this.updateTable}><b>Add</b> (Temporary while I figure out redux)</button>
@@ -64,8 +70,10 @@ class Post extends Component{
         */}
 
       </div>
+
     );
   }
 }
 
-export default Post;
+export default connect (null,{addQuote})(Post);
+//export default Post;
