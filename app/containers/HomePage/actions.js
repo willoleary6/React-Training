@@ -1,5 +1,10 @@
 export const FETCH_QUOTE = 'FETCH_QUOTE';
 export const RECEIVE_QUOTE = 'RECEIVE_QUOTE';
-
+export const DELETE_QUOTE = 'DELETE_QUOTE';
+export const RECEIVE_DELETE_QUOTE = 'RECEIVE_DELETE_QUOTE';
+//going up to the store
 export const fetchQuote = ()=> ({type: FETCH_QUOTE});
-export const receiveQuote = data => ({type: RECEIVE_QUOTE,data})
+export const deleteQuote = ()=> ({type: DELETE_QUOTE});
+//going down to the UI
+export const receiveDeleteQuote = deletedData => ({type: RECEIVE_DELETE_QUOTE,deletedData});
+export const receiveQuote = data => ({type: RECEIVE_QUOTE,data});
