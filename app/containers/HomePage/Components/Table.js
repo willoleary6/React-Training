@@ -1,7 +1,19 @@
 import React from 'react';
 
 const Table = (props) => {
+
+
+ //can only work with a single row
   let arr = [];
+  Object.keys(props.tableData).forEach(function (index) {
+    arr.push(props.tableData[index]);
+  });
+  var tableRowData = <tr>{arr.map(function (name, i) {
+    return <td key={i + '-column-' + {name}}>{name}</td>;
+  })
+  }
+  </tr>
+
   return (
     <table
       style={props.style}>
@@ -13,7 +25,9 @@ const Table = (props) => {
         })
       }
       {
-        //now printing the data for the main table
+        tableRowData
+
+        /*//now printing the data for the main table
         props.tableData.map(function(data,i){
           //convert data too array
           arr = [];
@@ -25,8 +39,9 @@ const Table = (props) => {
             return <td>{name}</td>;
           })
           //insert variable of columns in the current row.
-          return <tr key={i+'-row'}>{tableRowData}</tr>
-        })
+
+        })*/
+
       }
     </table>
   )

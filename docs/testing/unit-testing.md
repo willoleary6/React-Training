@@ -166,7 +166,7 @@ NavBar          # Wrapping folder
 ├── index.js      # Actual component
 ├── actions.js    # Actions
 ├── constants.js  # Constants
-├── reducer.js    # Reducer
+├── index.js    # Reducer
 └── test               # Folder of tests
     ├── actions.test.js  # Actions tests
     └── reducer.test.js  # Reducer tests
@@ -192,9 +192,7 @@ export function toggleNav() {
 with this reducer:
 
 ```javascript
-// reducer.js
-
-import { TOGGLE_NAV } from './constants';
+indindex.jsort { TOGGLE_NAV } from './constants';
 
 const initialState = {
   open: false,

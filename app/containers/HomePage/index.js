@@ -13,20 +13,16 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import './HomePage.css';
-import Button from './components/Button.js';
-import Post from './components/Post.js';
+import store from './store'
+import Post from "./Components/Post";
 import {Provider} from 'react-redux';
-import store from './store.js';
+import AddDelete from './Components/AddDelete'
 
 
-
-
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-
+class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
-
     return (
-      <Provider store={store}>
+     <Provider store = {store}>
       <div>
         <header className="App-header">
           <h1>
@@ -35,17 +31,19 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         </header>
         <body className="App-body">
         <div >
-          <div className="verticalDiv">
-            <Button title={"Add"} action = {() => action('ADD_QUOTE')}/>
-            <Button title={"Delete"}/>
-          </div>
-          <div>
-            <Post/>
-          </div>
+            <div className="verticalDiv">
+              <AddDelete/>
+            </div>
+            < div >
+              <Post/>
+            </div>
         </div>
         </body>
       </div>
-      </Provider>
+     </Provider>
     );
   }
 }
+
+export default HomePage;
+

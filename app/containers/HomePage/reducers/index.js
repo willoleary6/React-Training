@@ -1,18 +1,6 @@
-import { fromJS } from 'immutable';
+import {combineReducers} from 'redux'
+import data from './data';
 
-const initialState = fromJS({
-  counter:0,
-  quotes: []
-});
-
-function homePageReducer(state = initialState, action){
-  switch (action.type){
-    case 'RECIEVE_QUOTE':
-      return Object.assign({},state,{
-        quotes : action.payload
-      });
-    default:
-      return state;
-  }
-}
-export default homePageReducer;
+export default combineReducers({
+  data
+})
