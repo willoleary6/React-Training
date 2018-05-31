@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux'
 import  {connect} from 'react-redux'
 import {fetchQuote} from "../actions";
+import './component.css';
 import Table from  './Table.js';
 class Post extends Component{
   constructor(props){
@@ -12,17 +13,35 @@ class Post extends Component{
     }
   }
   render(){
-    return this.props.data.quote
-      ?  <Table
-        title ="Add Table"
-        headers = {this.state.headers}
-        tableData={this.props.data}
-      />
-      : <Table
-        title ="Add Table"
-        headers = {this.state.headers}
-        tableData={[]}
-      />;
+
+    {
+      return(
+        <div>
+          <div className={'inlineDiv'}>
+            <Table
+              title="Add Table"
+              headers={this.state.headers}
+              tableData={this.props.data}/>
+          </div>
+          <div className={'inlineDiv'}>
+            <Table
+              title="Delete Table"
+              headers={this.state.headers}
+              tableData={[]}/>
+          </div>
+        </div>
+      )
+      /*return this.props.data
+          ?
+          />
+          : <Table
+            title="Delete Table"
+            headers={this.state.headers}
+            tableData={[]}
+          />;
+      */}
+
+
   }
 }
 
