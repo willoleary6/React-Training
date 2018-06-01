@@ -4,6 +4,7 @@ import Button from './Button'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {fetchQuote,deleteQuote} from "../actions";
+import CheckBox from "./checkBox";
 
 class AddDelete extends Component{
   /* This component contains the two control buttons which
@@ -28,8 +29,13 @@ class AddDelete extends Component{
 
     return (
        <div>
+         <div>
          <Button title ={'Add'} action = {this.fetchQuote}/>
          <Button title ={'Delete'} action = {this.deleteQuote}/>
+         </div>
+         <div>
+            <CheckBox/>
+         </div>
        </div>
       )
   }
