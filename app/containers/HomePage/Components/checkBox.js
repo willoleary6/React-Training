@@ -17,15 +17,15 @@
 
     }
         handleChangeChk(e){
-      //get a new quote from the server.
-      //this.props.fetchQuote();
-          console.log('Checked:'+e.target);
+         //get a new quote from the server.
+         //this.props.fetchQuote();
+          console.log('Checked:'+e.target.checked+" "+e.target.id);
     }
 
     render() {
 
       return (
-        <input type="checkbox" onChange={this.handleChangeChk} />
+        <input type="checkbox" id= '1' onChange={this.handleChangeChk} />
       )
     }
 
