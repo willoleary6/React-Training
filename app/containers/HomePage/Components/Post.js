@@ -16,32 +16,7 @@ class Post extends Component{
     this.formatTableData = this.formatTableData.bind(this);
     this.formatTableHeader = this.formatTableHeader.bind(this);
   }
-  componentWillMount() {
 
-  }
-  formatTableHeader(data){
-    return props.headers.map(function(head,i){
-      return <th key={i+'-head'}>{head}</th>
-    });
-  }
-  formatTableData(data){
-    //can only work with a single row
-    let arr = [];
-    Object.keys(data).forEach(function (index) {
-      arr.push(data[index]);
-    });
-    return arr.map(function(index,j){
-        return( <tr key={'row'+j}>
-            {
-              Object.values(index).map(function (Innerindex, i) {
-                return <td key={'column'+i+Innerindex}>{Innerindex}</td>;
-              })
-            }
-          </tr>
-        )
-      }
-    )
-  }
 
 
 
@@ -51,7 +26,7 @@ class Post extends Component{
       return(
         <div>
           <div>
-            <button onClick={() => this.formatTableData(this.props.data)}>Click me</button>
+            <button >Click me</button>
             <CheckBox row = {'12'}/>
           </div>
           <div className={'inlineDiv'}>
