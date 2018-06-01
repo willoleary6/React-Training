@@ -28,8 +28,12 @@ const Table = (props) => {
       style={props.style}>
       <caption>{props.title}</caption>
       {
-        //print out table headers
-        tableHeader
+        <thead>
+          <tr>{
+            //print out table headers
+            tableHeader
+          }</tr>
+        </thead>
       }
       {
         tableRowData

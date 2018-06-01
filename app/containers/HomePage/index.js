@@ -29,7 +29,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
             <FormattedMessage {...messages.header} />
           </h1>
         </header>
-        <body className="App-body">
+        <div className="App-body">
         <div >
             <div className="verticalDiv">
               <AddDelete/>
@@ -38,7 +38,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
               <Post/>
             </div>
         </div>
-        </body>
+        </div>
       </div>
      </Provider>
     );

@@ -11,22 +11,47 @@ class Post extends Component{
     super(props);
     this.state = {
       //this is hard coded for convenience could easily change to dynamic using Object.key
-      headers: ['Quote','Author','Show/Movie'],
+      headers: ['Quote','Author','Show/Movie','Delete ?'],
     }
-    this.formatData = this.formatData.bind(this);
+    this.formatTableData = this.formatTableData.bind(this);
+    this.formatTableHeader = this.formatTableHeader.bind(this);
   }
-  formatData(){
+  componentWillMount() {
 
+  }
+  formatTableHeader(data){
+    return props.headers.map(function(head,i){
+      return <th key={i+'-head'}>{head}</th>
+    });
+  }
+  formatTableData(data){
+    //can only work with a single row
+    let arr = [];
+    Object.keys(data).forEach(function (index) {
+      arr.push(data[index]);
+    });
+    return arr.map(function(index,j){
+        return( <tr key={'row'+j}>
+            {
+              Object.values(index).map(function (Innerindex, i) {
+                return <td key={'column'+i+Innerindex}>{Innerindex}</td>;
+              })
+            }
+          </tr>
+        )
+      }
+    )
   }
 
 
-  
+
   render(){
     {
       //calling the two tables we will be displaying information on
       return(
         <div>
           <div>
+            <button onClick={() => this.formatTableData(this.props.data)}>Click me</button>
             <CheckBox row = {'12'}/>
           </div>
           <div className={'inlineDiv'}>
