@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {bindActionCreators} from 'redux'
 import  {connect} from 'react-redux'
 import {fetchQuote,deleteQuote} from "../actions";
+import CheckBox from './checkBox';
 
 import './component.css';
 import Table from  './Table.js';
@@ -12,12 +13,20 @@ class Post extends Component{
       //this is hard coded for convenience could easily change to dynamic using Object.key
       headers: ['Quote','Author','Show/Movie'],
     }
+    this.formatData = this.formatData.bind(this);
   }
+  formatData(){
+
+  }
+
   render(){
     {
       //calling the two tables we will be displaying information on
       return(
         <div>
+          <div>
+            <CheckBox row = {'12'}/>
+          </div>
           <div className={'inlineDiv'}>
             <Table
               title="Add Table"

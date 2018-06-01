@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,18 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Button.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,8 +42,8 @@
       <file leaf-file-name="AddDelete.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -65,19 +54,31 @@
       <file leaf-file-name="Table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="24" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkBox.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkBox.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="e#349#375#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,13 +165,13 @@
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/component.css" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/sagas/index.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button.js" />
-        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/reducers/data.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/actions.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/reducers/index.js" />
-        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" />
       </list>
     </option>
   </component>
@@ -300,7 +301,7 @@
       <workItem from="1527758107304" duration="17193000" />
       <workItem from="1527849141853" duration="247000" />
       <workItem from="1527849405940" duration="5000" />
-      <workItem from="1527849590269" duration="4917000" />
+      <workItem from="1527849590269" duration="5545000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1526301970418</created>
@@ -404,7 +405,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123220000" />
+    <option name="totallyTimeSpent" value="123848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -687,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/updateTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -774,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
@@ -788,12 +772,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="24" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#349#375#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,12 +799,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#349#375#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

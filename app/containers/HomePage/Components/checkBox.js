@@ -25,7 +25,7 @@
     render() {
 
       return (
-        <input type="checkbox" id= '1' onChange={this.handleChangeChk} />
+        <input type="checkbox" id={this.props.row} onChange={this.handleChangeChk} />
       )
     }
 
