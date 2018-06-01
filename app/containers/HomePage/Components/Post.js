@@ -19,6 +19,8 @@ class Post extends Component{
 
   }
 
+
+  
   render(){
     {
       //calling the two tables we will be displaying information on
