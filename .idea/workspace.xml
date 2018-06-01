@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/App/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/App/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/App/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/tests/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/App/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/tests/selectors.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/HomePage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Loadable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Loadable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/sagas/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/sagas/updateTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/tests/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/Loadable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/Loadable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/tests/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/translations/en.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,116 +49,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#343#369#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Button.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddDelete.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkBox.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deletedData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -213,40 +137,6 @@
               <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
               <item name="React-Training" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-              <item name="sagas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -312,7 +202,7 @@
       <workItem from="1527849141853" duration="247000" />
       <workItem from="1527849405940" duration="5000" />
       <workItem from="1527849590269" duration="8721000" />
-      <workItem from="1527865838970" duration="915000" />
+      <workItem from="1527865838970" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1526301970418</created>
@@ -416,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127939000" />
+    <option name="totallyTimeSpent" value="128501000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +319,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13385417" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
