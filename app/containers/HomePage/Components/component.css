@@ -42,14 +42,4 @@ table, th,tr, td{
 div{
   color:black;
 }
-.inlineDiv{
-  transition: all 250ms linear;
-  min-width: 13em;
-  float: left;
-  padding: 1%;
-  valign:top;
-  position: relative;
-  width: 45%;
-  display: inline-block;
-}
 

@@ -14,9 +14,9 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import './HomePage.css';
 import store from './store'
-import Post from "./Components/Post";
+import Post from "./Post";
 import {Provider} from 'react-redux';
-import AddDelete from './Components/AddDelete'
+import AddDelete from './AddDelete'
 
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function

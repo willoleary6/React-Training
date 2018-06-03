@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux'
 import  {connect} from 'react-redux'
-import {fetchQuote,deleteQuote} from "../actions";
-import CheckBox from './CheckBox';
+import {fetchQuote,deleteQuote} from "./actions";
+import CheckBox from './Components/CheckBox/index';
 
-import './component.css';
-import Table from  './Table.js';
+import './HomePage.css';
+import Table from './Components/Table';
 class Post extends Component{
   constructor(props){
     super(props);
@@ -17,6 +17,8 @@ class Post extends Component{
     //binding functions
     this.fetchQuote=this.fetchQuote.bind(this);
     this.deleteQuote=this.deleteQuote.bind(this);
+    this.sortHeaders=this.sortHeaders.bind(this);
+    this.sortTableData=this.sortTableData.bind(this);
   }
   testFunction(){
     console.log('test');
@@ -29,7 +31,29 @@ class Post extends Component{
     //move the quote from the 'Add table' to the deleted table.
     this.props.deleteQuote();
   }
-
+  sortHeaders(){
+    //can only work with a single row
+    return this.state.headers.map(function(head,i){
+      return <th key={i+'-head'}>{head}</th>
+    });
+  }
+  sortTableData(data){
+    let arr = [];
+    Object.keys(data).forEach(function (index) {
+      arr.push(data[index]);
+    });
+    return arr.map(function(index,j){
+        return( <tr key={'row'+j}>
+            {
+              Object.values(index).map(function (Innerindex, i) {
+                return <td key={'column'+i+Innerindex}>{Innerindex}</td>;
+              })
+            }
+          </tr>
+        )
+      }
+    )
+  }
 
   render(){
     {
@@ -42,15 +66,17 @@ class Post extends Component{
           <div className={'inlineDiv'}>
             <Table
               title="Add Table"
-              headers={this.state.headers}
-              tableData={this.props.data}/>
+              headers={this.sortHeaders()}
+              tableData={this.sortTableData(this.props.data)}/>
           </div>
-          <div className={'inlineDiv'}>
-            <Table
-              title="Delete Table"
-              headers={this.state.headers}
-              tableData={this.props.deletedData}/>
-          </div>
+          {
+            <div className={'inlineDiv'}>
+              <Table
+                title="Delete Table"
+                headers={this.sortHeaders()}
+                tableData={this.sortTableData(this.props.deletedData)}/>
+            </div>
+          }
         </div>
       )
       }

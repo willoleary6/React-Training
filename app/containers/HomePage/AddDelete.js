@@ -1,10 +1,10 @@
 import React from 'react';
 import {Component} from "react";
-import Button from './Button/index.js'
+import Button from './Components/Button/index.js'
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {fetchQuote,deleteQuote} from "../actions";
+import {fetchQuote,deleteQuote} from "./actions";
 
 
 class AddDelete extends Component{
