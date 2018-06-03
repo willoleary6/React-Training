@@ -1,6 +1,7 @@
 import React from 'react';
 import {Component} from "react";
-import Button from './Button'
+import Button from './Button/index.js'
+
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {fetchQuote,deleteQuote} from "../actions";
@@ -30,9 +31,11 @@ class AddDelete extends Component{
     return (
        <div>
          <div>
-         <Button title ={'Add'} action = {this.fetchQuote}/>
-         <Button title ={'Delete'} action = {this.deleteQuote}/>
-         </div>
+           <Button  onClick = {this.fetchQuote}>add</Button>
+
+           <Button onClick={this.deleteQuote}>Delete</Button>
+
+           </div>
 
        </div>
       )

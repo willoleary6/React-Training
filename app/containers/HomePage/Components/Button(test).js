@@ -1,6 +1,6 @@
 import React from 'react';
 import './component.css';
-const Button = (props) => {
+const ButtonTest = (props) => {
   //Basic button template
   return(
     <button
@@ -11,4 +11,4 @@ const Button = (props) => {
     </button>
   )
 };
-export default Button;
+export default ButtonTest;

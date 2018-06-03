@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="" />
+    <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Button/A.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Button/StyledButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Button/buttonStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Button(test).js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,12 +22,96 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="85">
               <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button(test).js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button(test).js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buttonStyles.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/buttonStyles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/A.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyledButton.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/StyledButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <folding>
+                <element signature="e#171#211#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddDelete.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -37,6 +130,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2ndApproach" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,10 +166,15 @@
         <option value="$PROJECT_DIR$/app/containers/HomePage/actions.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/reducers/index.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" />
-        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/index.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button/A.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button/StyledButton.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button/Wrapper.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button/index.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Button/buttonStyles.js" />
       </list>
     </option>
   </component>
@@ -89,11 +192,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2873" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -103,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,16 +230,34 @@
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="HomePage" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Button" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React-Training(master)" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -196,6 +315,7 @@
       <workItem from="1527849590269" duration="8721000" />
       <workItem from="1527865838970" duration="915000" />
       <workItem from="1527869066630" duration="33000" />
+      <workItem from="1528027500279" duration="4417000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1526301970418</created>
@@ -299,7 +419,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127972000" />
+    <option name="totallyTimeSpent" value="132391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,16 +431,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="2873" y="0" width="974" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13385417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29242262" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50282484" side_tool="true" weight="0.22484277" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32625785" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2361111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49717513" visible="true" weight="0.2349138" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49717513" visible="true" weight="0.22115384" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -393,33 +514,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="281" column="22" lean-forward="true" selection-start-line="281" selection-start-column="22" selection-end-line="281" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260372">
@@ -590,19 +684,90 @@
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/data.js" />
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js" />
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/index.js" />
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" />
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" />
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/index.js" />
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="85">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/index.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css" />
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/A.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button(test).js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/Wrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#171#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/StyledButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button/buttonStyles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

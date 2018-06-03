@@ -13,8 +13,7 @@ class Post extends Component{
       //this is hard coded for convenience could easily change to dynamic using Object.key
       headers: ['Quote','Author','Show/Movie','Delete ?'],
     }
-    this.formatTableData = this.formatTableData.bind(this);
-    this.formatTableHeader = this.formatTableHeader.bind(this);
+
   }
 
 
