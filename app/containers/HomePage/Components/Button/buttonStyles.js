@@ -12,8 +12,6 @@ const buttonStyles = css`
     border: 1px solid #656565;
     text-decoration: none;
     text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    -webkit-touch-callout: none;
     width: 100%;
     padding: 1em 3em;
     
