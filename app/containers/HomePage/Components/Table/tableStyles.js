@@ -6,7 +6,9 @@ const tableStyles = css`
     border-collapse: collapse;
     color: #313131;
     margin: 1em;
-    border: 1px solid black;
+     border: 1px solid black;
+    
+    
     
     
     

@@ -1,28 +1,34 @@
-import React, { Children } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import StyledTable from './StyledTable';
+import '../component.css';
+
+
 function Table(props){
+
+
   return(
-    <StyledTable>
-      <caption>{props.title}</caption>
-      {
-        <thead>
-          <tr>
+      <StyledTable>
+        <caption>{props.title}</caption>
+        {
+          <thead>
+            <tr>
+              {
+                //print out table headers
+                props.headers
+              }
+            </tr>
+          </thead>
+        }
+        {
+          <tbody>
             {
-              //print out table headers
-              props.headers
+              props.tableData
             }
-          </tr>
-        </thead>
-      }
-      {
-        <tbody>
-          {
-            props.tableData
-          }
-        </tbody>
-      }
-    </StyledTable>
+          </tbody>
+        }
+      </StyledTable>
+
   );
 }
 Table.propTypes = {

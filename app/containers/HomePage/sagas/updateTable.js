@@ -1,4 +1,4 @@
-export default function updateTable(data,dataStore){
+export default function updateTable(data){
 
   //breaking down the string response from the server into json
   var stringResponse = data.data;
@@ -15,7 +15,6 @@ export default function updateTable(data,dataStore){
   //store variables as json.
   var json = {'quote': quote, 'author': author, 'movie': movie};
   //add json to pre existing list of quotes.
-  dataStore.push(json);
-  return dataStore;
+  return json;
 
 }
