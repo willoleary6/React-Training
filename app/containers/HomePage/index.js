@@ -22,24 +22,30 @@ import AddDelete from './AddDelete'
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-     <Provider store = {store}>
-      <div>
-        <header className="App-header">
-          <h1>
-            <FormattedMessage {...messages.header} />
-          </h1>
-        </header>
-        <div className="App-body">
-        <div >
-            <div className="verticalDiv">
-              <AddDelete/>
+      <Provider store = {store}>
+        <div>
+          <header className="App-header">
+            <h1>
+              <FormattedMessage {...messages.header} />
+            </h1>
+          </header>
+          <div className="App-body">
+            <div>
+              {
+                //control buttons.
+              }
+              <div className="verticalDiv">
+                <AddDelete/>
+              </div>
+              {
+                //output tables.
+              }
+              <div>
+                <Post/>
+              </div>
             </div>
-            < div >
-              <Post/>
-            </div>
+          </div>
         </div>
-        </div>
-      </div>
      </Provider>
     );
   }

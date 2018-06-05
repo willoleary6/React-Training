@@ -6,7 +6,6 @@ export const MARK_FOR_DELETE = 'MARK_FOR_DELETE';
 //going up to the store
 export const fetchQuote = ()=> ({type: FETCH_QUOTE});
 export const deleteQuote = ()=> ({type: DELETE_QUOTE});
-export const markForDelete = ()=> ({type: MARK_FOR_DELETE});
 //going down to the UI
 export const receiveDeleteQuote = deletedData => ({type: RECEIVE_DELETE_QUOTE,deletedData});
 export const receiveQuote = data => ({type: RECEIVE_QUOTE,data});

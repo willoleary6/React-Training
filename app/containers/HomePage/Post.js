@@ -12,34 +12,18 @@ class Post extends Component{
     this.state = {
       //this is hard coded for convenience could easily change to dynamic using Object.key
       headers: ['Quote','Author','Show/Movie','Delete ?'],
-      Deleteheaders: ['Quote','Author','Show/Movie'],
+      deleteHeaders: ['Quote','Author','Show/Movie'],
     }
-    this.testFunction = this.testFunction.bind(this);
-    //binding functions
-    this.fetchQuote=this.fetchQuote.bind(this);
-    this.deleteQuote=this.deleteQuote.bind(this);
     this.sortHeaders=this.sortHeaders.bind(this);
     this.sortTableData=this.sortTableData.bind(this);
   }
-  testFunction(){
-    console.log('test');
-  }
-  fetchQuote(){
-    //get a new quote from the server.
-    this.props.fetchQuote();
-  }
-  deleteQuote(){
-    //move the quote from the 'Add table' to the deleted table.
-    this.props.deleteQuote();
-  }
   sortHeaders(add){
-    //can only work with a single row
     if(add) {
       return this.state.headers.map(function (head, i) {
         return <th key={i + '-head'}>{head}</th>
       });
     }else{
-      return this.state.Deleteheaders.map(function (head, i) {
+      return this.state.deleteHeaders.map(function (head, i) {
         return <th key={i + '-head'}>{head}</th>
       });
     }

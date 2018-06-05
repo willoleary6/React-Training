@@ -33,7 +33,7 @@ function Table(props){
 }
 Table.propTypes = {
   title: PropTypes.string,
-  headers: PropTypes.element,
-  tableData:PropTypes.element,
+  headers: PropTypes.array,
+  tableData:PropTypes.array,
 };
 export default Table;
