@@ -1,34 +1,37 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import StyledTable from './StyledTable';
-import Tr from '../Tr'
+import Thead from '../Thead';
+import Tbody from '../Tbody';
+
+
 function Table(props){
   return(
     <StyledTable>
       <caption>{props.title}</caption>
       {
-        <thead>
-          <Tr>
+        <Thead>
+
             {
               //print out table headers
               props.headers
             }
-          </Tr>
-        </thead>
+
+        </Thead>
       }
       {
-        <tbody>
+        <Tbody>
           {
             props.tableData
           }
-        </tbody>
+        </Tbody>
       }
     </StyledTable>
   );
 }
 Table.propTypes = {
   title: PropTypes.string,
-  headers: PropTypes.element,
-  tableData:PropTypes.element,
+  headers: PropTypes.array,
+  tableData:PropTypes.array,
 };
 export default Table;

@@ -6,7 +6,7 @@ import React, {Component} from 'react';
 
 //import './HomePage.css';
 //import Table from './Components/Table';
-
+import Th from '../../components/Th';
 import Table from '../../components/Table';
 import InlineDiv from '../../components/InlineDiv';
 
@@ -24,11 +24,11 @@ class ViewTables extends Component{
   sortHeaders(add){
     if(add) {
       return this.state.headers.map(function (head, i) {
-        return <th key={i + '-head'}>{head}</th>
+        return <Th key={i + '-head'}>{head}</Th>
       });
     }else{
       return this.state.deleteHeaders.map(function (head, i) {
-        return <th key={i + '-head'}>{head}</th>
+        return <Th key={i + '-head'}>{head}</Th>
       });
     }
   }
