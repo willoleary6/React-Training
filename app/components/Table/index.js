@@ -1,18 +1,19 @@
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 import StyledTable from './StyledTable';
+import Tr from '../Tr'
 function Table(props){
   return(
     <StyledTable>
       <caption>{props.title}</caption>
       {
         <thead>
-          <tr>
+          <Tr>
             {
               //print out table headers
               props.headers
             }
-          </tr>
+          </Tr>
         </thead>
       }
       {
