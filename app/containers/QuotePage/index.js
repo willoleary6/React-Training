@@ -21,6 +21,7 @@ import saga from './saga';
 import messages from './messages';
 import InlineDiv from '../../components/InlineDiv';
 import ViewTables from './ViewTables'
+import {fetchQuote} from "./actions";
 
 export class QuotePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -53,11 +54,13 @@ QuotePage.propTypes = {
 
 const mapStateToProps = createStructuredSelector({
   quotepage: makeSelectQuotePage(),
+
 });
 
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
+    fetchQuote,
   };
 }
 
@@ -71,3 +74,4 @@ export default compose(
   withSaga,
   withConnect,
 )(QuotePage);
+

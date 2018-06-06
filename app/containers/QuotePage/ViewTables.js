@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-//import {bindActionCreators} from 'redux'
-//import  {connect} from 'react-redux'
-//import {fetchQuote,deleteQuote} from "./actions";
 
-
-//import './HomePage.css';
-//import Table from './Components/Table';
 import Th from '../../components/Th';
 import Table from '../../components/Table';
 import InlineDiv from '../../components/InlineDiv';
@@ -66,26 +60,5 @@ class ViewTables extends Component{
   }
 }
 export default ViewTables;
-/*
 
-
-     {
-                //tableData={this.sortTableData(this.props.data)}
-              }
-
-               {
-                 // tableData = {this.sortTableData(this.props.deletedData)}
-                }
-
-
-//getting access to the items in the store
-const mapStateToProps = state => (
-  {data: state.data,
-    deletedData: state.deletedData
-  });
-//getting access to functions in saga
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({fetchQuote,deleteQuote}, dispatch);
-
-export default connect(mapStateToProps, mapDispatchToProps)(ViewTables);*/
 

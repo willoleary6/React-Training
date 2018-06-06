@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import A from './A';
 import StyledButton from './StyledButton';
 
-function Button2(props) {
+function HomeworkButton(props) {
   // Render an anchor tag
   let button = (
     <A href={props.href} onClick={props.onClick}>
@@ -34,11 +34,11 @@ function Button2(props) {
   );
 }
 
-Button2.propTypes = {
+HomeworkButton.propTypes = {
   handleRoute: PropTypes.func,
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
 };
 
-export default Button2;
+export default HomeworkButton;
