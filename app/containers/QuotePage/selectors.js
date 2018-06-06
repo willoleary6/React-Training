@@ -5,6 +5,7 @@ import { createSelector } from 'reselect';
  */
 const selectQuotePageDomain = (state) => state.get('quotePage');
 const selectData = (state) => state.get('quotePage');
+const selectDeletedData = (state) => state.get('quotePage');
 /**
  * Other specific selectors
  */
@@ -24,6 +25,11 @@ const makeSelectData = () => createSelector(
   selectData,
   (data) => data.get('data')
 );
+const makeSelectDeletedData = () => createSelector(
+  selectDeletedData,
+  (data) => data.get('DeletedData')
+);
+
 
 
 
@@ -32,6 +38,7 @@ export {
   makeSelectQuotePage,
   selectQuotePageDomain,
   makeSelectData,
+  makeSelectDeletedData
 };
 
 

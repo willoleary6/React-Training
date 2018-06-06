@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Th from '../../components/Th';
 import Table from '../../components/Table';
 import InlineDiv from '../../components/InlineDiv';
+import PropTypes from "prop-types";
 
 class ViewTables extends Component{
   constructor(props){
@@ -43,7 +44,7 @@ class ViewTables extends Component{
             <Table
               title="Add Table"
               headers={this.sortHeaders(true)}
-
+              tableData={this.props.addTable}
               />
           </InlineDiv>
           {
@@ -51,6 +52,7 @@ class ViewTables extends Component{
               <Table
                 title="Delete Table"
                 headers={this.sortHeaders(false)}
+                tableData={this.props.deletedData}
                />
             </InlineDiv>
           }
@@ -58,7 +60,13 @@ class ViewTables extends Component{
       )
       }
   }
+
 }
+ViewTables.propTypes = {
+  headers: PropTypes.array,
+  addTable:PropTypes.array,
+  deletedData:PropTypes.array
+};
 export default ViewTables;
 
 

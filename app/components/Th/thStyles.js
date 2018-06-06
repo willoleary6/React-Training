@@ -2,7 +2,10 @@ import { css } from 'styled-components';
 
 const thStyles = css`
     border: 1px solid black;
-    width : 100%;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
     
     
 `;

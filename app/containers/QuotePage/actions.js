@@ -17,5 +17,5 @@ export function defaultAction() {
 export const fetchQuote = ()=> ({type: FETCH_QUOTE});
 export const deleteQuote = ()=> ({type: DELETE_QUOTE});
 //going down to the UI
-export const receiveDeleteQuote = deletedData => ({type: RECEIVE_DELETE_QUOTE,deletedData});
+export const receiveDeleteQuote = ()=> ({type: RECEIVE_DELETE_QUOTE});
 export const receiveQuote = data => ({type: RECEIVE_QUOTE,data});

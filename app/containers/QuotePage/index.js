@@ -15,7 +15,7 @@ import CenteredSection from './CenteredSection';
 import AddDelete from './AddDelete';
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
-import {makeSelectQuotePage, makeSelectData} from './selectors';
+import {makeSelectData, makeSelectDeletedData} from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
@@ -24,6 +24,9 @@ import ViewTables from './ViewTables'
 import {fetchQuote, deleteQuote} from "./actions";
 
 export class QuotePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <div>
@@ -39,10 +42,7 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
                 <AddDelete/>
               </InlineDiv>
               <div>
-                <h1>{this.state.data}</h1>
-              </div>
-              <div>
-                <ViewTables/>
+                <ViewTables addTable={this.props.data} deleteTable={this.props.deletedData}/>
               </div>
             </div>
         </CenteredSection>
@@ -55,12 +55,20 @@ QuotePage.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
+
 const mapStateToProps = createStructuredSelector({
-  quotepage: makeSelectQuotePage(),
-  data : makeSelectData()
+
+  //quotepage: makeSelectQuotePage(),
+  data: makeSelectData(),
+  deletedData: makeSelectDeletedData(),
+  //data : makeSelectData()
 
 });
 
+/*const mapStateToProps = state => (
+  {data: state.data
+  });
+*/
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
