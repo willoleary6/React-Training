@@ -1,18 +1,24 @@
 import React from 'react';
 import HomeworkButton from '../../components/HomeworkButton'
+import {bindActionCreators} from 'redux';
+import {fetchQuote,deleteQuote} from "./actions";
+import {connect} from 'react-redux';
 
 function AddDelete(props){
   /* This component contains the two control buttons which
    * use redux to control the tables.*/
     return (
        <div>
-         {
-           /*onClick ={this.props.fetchQuote}*/
-           /*onClick={this.props.deleteQuote}*/
-         }
          <HomeworkButton onClick ={props.fetchQuote}>add Quote</HomeworkButton>
-         <HomeworkButton >Delete Selected</HomeworkButton>
+         <HomeworkButton onClick ={props.deleteQuote}>Delete Selected</HomeworkButton>
        </div>
       )
 }
-export default AddDelete;
+//getting access to data in the store
+const mapStateToProps = state => (
+  {});
+//getting access to functions in the store
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({fetchQuote,deleteQuote}, dispatch);
+//connect this component to redux
+export default connect(mapStateToProps, mapDispatchToProps)(AddDelete);
