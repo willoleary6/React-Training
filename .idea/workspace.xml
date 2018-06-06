@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/CheckBox/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/A.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/StyledButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/buttonStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/InlineDiv/StyledDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/InlineDiv/divStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Table/StyledTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Table/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Table/tableStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/CenteredSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Header/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internals/generators/container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internals/generators/container/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/QuotePage/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/QuotePage/ViewTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/containers/QuotePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/QuotePage/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,10 +19,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="e#89#115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="534">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
               <folding>
                 <element signature="e#28#54#0" expanded="true" />
               </folding>
@@ -49,22 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Post.js">
+      <file leaf-file-name="Loadable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Loadable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#67#105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,6 +62,27 @@
               <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewTables.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/ViewTables.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,29 +107,6 @@
       <file leaf-file-name="Input.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Input.js">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Loadable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Loadable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/messages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
@@ -212,6 +195,8 @@
         <option value="$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js" />
         <option value="$PROJECT_DIR$/app/components/Button2/buttonStyles.js" />
         <option value="$PROJECT_DIR$/app/components/InlineDiv/divStyles.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/viewTables.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/ViewTables.js" />
         <option value="$PROJECT_DIR$/app/containers/QuotePage/index.js" />
       </list>
     </option>
@@ -274,13 +259,6 @@
               <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
@@ -360,7 +338,7 @@
       <workItem from="1527849590269" duration="8721000" />
       <workItem from="1527865838970" duration="1477000" />
       <workItem from="1528208573169" duration="6622000" />
-      <workItem from="1528272762072" duration="876000" />
+      <workItem from="1528272762072" duration="1901000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1526301970418</created>
@@ -464,7 +442,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140284000" />
+    <option name="totallyTimeSpent" value="141309000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,7 +457,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13375461" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13375461" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50282484" side_tool="true" weight="0.22484277" />
@@ -638,17 +616,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#62#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Loadable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#67#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,16 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="e#89#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/tests/saga.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -861,19 +818,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/CenteredSection.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Input.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Loadable.js">
@@ -916,29 +860,63 @@
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Section.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#28#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Input.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#89#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Loadable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#67#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/ViewTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <folding>
+            <element signature="e#28#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

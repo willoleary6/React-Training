@@ -19,8 +19,8 @@ import makeSelectQuotePage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
-import InlineDiv from '../../components/InlineDiv'
-
+import InlineDiv from '../../components/InlineDiv';
+import ViewTables from './ViewTables'
 
 export class QuotePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -37,11 +37,9 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
               <InlineDiv>
                 <AddDelete/>
               </InlineDiv>
-              <div>
-                {
-                  //<Post/>
-                }
-              </div>
+              <InlineDiv>
+                <ViewTables/>
+              </InlineDiv>
             </div>
         </CenteredSection>
       </div>

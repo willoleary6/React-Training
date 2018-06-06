@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
-import {bindActionCreators} from 'redux'
-import  {connect} from 'react-redux'
-import {fetchQuote,deleteQuote} from "./actions";
+//import {bindActionCreators} from 'redux'
+//import  {connect} from 'react-redux'
+//import {fetchQuote,deleteQuote} from "./actions";
 
 
-import './HomePage.css';
-import Table from './Components/Table';
-class Post extends Component{
+//import './HomePage.css';
+//import Table from './Components/Table';
+
+import Table from '../../components/Table';
+
+
+class ViewTables extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -46,14 +50,15 @@ class Post extends Component{
             <Table
               title="Add Table"
               headers={this.sortHeaders(true)}
-              tableData={this.sortTableData(this.props.data)}/>
+
+              />
           </div>
           {
             <div className={'inlineDiv'}>
               <Table
                 title="Delete Table"
                 headers={this.sortHeaders(false)}
-                tableData={this.sortTableData(this.props.deletedData)}/>
+               />
             </div>
           }
         </div>
@@ -61,6 +66,18 @@ class Post extends Component{
       }
   }
 }
+export default ViewTables;
+/*
+
+
+     {
+                //tableData={this.sortTableData(this.props.data)}
+              }
+
+               {
+                 // tableData = {this.sortTableData(this.props.deletedData)}
+                }
+
 
 //getting access to the items in the store
 const mapStateToProps = state => (
@@ -71,5 +88,5 @@ const mapStateToProps = state => (
 const mapDispatchToProps = dispatch =>
   bindActionCreators({fetchQuote,deleteQuote}, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Post);
+export default connect(mapStateToProps, mapDispatchToProps)(ViewTables);*/
 
