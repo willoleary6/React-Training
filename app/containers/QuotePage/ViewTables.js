@@ -8,7 +8,7 @@ import React, {Component} from 'react';
 //import Table from './Components/Table';
 
 import Table from '../../components/Table';
-
+import InlineDiv from '../../components/InlineDiv';
 
 class ViewTables extends Component{
   constructor(props){
@@ -45,21 +45,20 @@ class ViewTables extends Component{
       //calling the two tables we will be displaying information on
       return(
         <div>
-
-          <div className={'inlineDiv'}>
+          <InlineDiv>
             <Table
               title="Add Table"
               headers={this.sortHeaders(true)}
 
               />
-          </div>
+          </InlineDiv>
           {
-            <div className={'inlineDiv'}>
+            <InlineDiv>
               <Table
                 title="Delete Table"
                 headers={this.sortHeaders(false)}
                />
-            </div>
+            </InlineDiv>
           }
         </div>
       )

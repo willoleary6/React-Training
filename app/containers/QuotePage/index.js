@@ -37,9 +37,9 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
               <InlineDiv>
                 <AddDelete/>
               </InlineDiv>
-              <InlineDiv>
+              <div>
                 <ViewTables/>
-              </InlineDiv>
+              </div>
             </div>
         </CenteredSection>
       </div>
