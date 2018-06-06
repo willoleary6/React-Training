@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+  quotes:{
+    id: 'boilerplate.components.Header.quotes',
+    defaultMessage: 'Quotes',
+  },
 });

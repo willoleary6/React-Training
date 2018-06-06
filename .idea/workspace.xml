@@ -2,41 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c27b5d8-9a7f-4ab3-af8e-a6cd00738f42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/App/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/CheckBox/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/A.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/StyledButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/buttonStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/HomeworkButton/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/InlineDiv/StyledDiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/InlineDiv/divStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Table/StyledTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Table/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Table/tableStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/CenteredSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/containers/QuotePage/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Header/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/messages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/containers/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/App/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/App/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/tests/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/App/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/App/tests/selectors.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Components/component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/HomePage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/Loadable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/Loadable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/containers/HomePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/sagas/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/sagas/updateTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/HomePage/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/HomePage/tests/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/LanguageProvider/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/LanguageProvider/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/Loadable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/Loadable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/containers/NotFoundPage/tests/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/containers/NotFoundPage/tests/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/i18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/translations/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internals/generators/container/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internals/generators/container/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/shjs.cmd" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,7 +36,108 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="e#28#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Post.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddDelete.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="saga.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/saga.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Section.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Input.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Input.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Loadable.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Loadable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/messages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,8 +149,20 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Features</find>
+      <find>features</find>
+      <find>Button</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -96,8 +196,23 @@
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Table.js" />
-        <option value="$PROJECT_DIR$/app/containers/HomePage/index.js" />
         <option value="$PROJECT_DIR$/app/containers/HomePage/Components/Post.js" />
+        <option value="$PROJECT_DIR$/internals/generators/container/index.js" />
+        <option value="$PROJECT_DIR$/app/containers/HomePage/index.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/Loadable.js" />
+        <option value="$PROJECT_DIR$/app/components/Header/messages.js" />
+        <option value="$PROJECT_DIR$/app/containers/App/index.js" />
+        <option value="$PROJECT_DIR$/app/components/Header/index.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/messages.js" />
+        <option value="$PROJECT_DIR$/app/components/InlineDiv/styledDiv.js" />
+        <option value="$PROJECT_DIR$/app/components/InlineDiv/StyledDiv.js" />
+        <option value="$PROJECT_DIR$/app/components/InlineDiv/index.js" />
+        <option value="$PROJECT_DIR$/app/components/Button/buttonStyles.js" />
+        <option value="$PROJECT_DIR$/app/components/Button2/index.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js" />
+        <option value="$PROJECT_DIR$/app/components/Button2/buttonStyles.js" />
+        <option value="$PROJECT_DIR$/app/components/InlineDiv/divStyles.js" />
+        <option value="$PROJECT_DIR$/app/containers/QuotePage/index.js" />
       </list>
     </option>
   </component>
@@ -129,18 +244,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="React-Training" type="b2602c69:ProjectViewProjectNode" />
-              <item name="React-Training" type="462c0819:PsiDirectoryNode" />
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="InlineDiv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="React-Training(master)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="React-Training(master)" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="QuotePage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,6 +314,9 @@
       <recent name="C:\Users\willo\WebstormProjects\React-Training\app\containers\HomePage\reducers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\sourceCode\Repositories\React-Training(master)\app\containers\QuotePage" />
+      <recent name="C:\sourceCode\Repositories\React-Training(master)\app\components\Button2" />
+      <recent name="C:\sourceCode\Repositories\React-Training(master)\app\components" />
       <recent name="C:\Users\willo\WebstormProjects\React-Training\app\containers\HomePage" />
       <recent name="C:\Users\willo\WebstormProjects\React-Training\app\containers\HomePage\Components" />
     </key>
@@ -203,6 +359,8 @@
       <workItem from="1527849405940" duration="5000" />
       <workItem from="1527849590269" duration="8721000" />
       <workItem from="1527865838970" duration="1477000" />
+      <workItem from="1528208573169" duration="6622000" />
+      <workItem from="1528272762072" duration="876000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1526301970418</created>
@@ -306,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128501000" />
+    <option name="totallyTimeSpent" value="140284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,15 +477,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13385417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13375461" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50282484" side_tool="true" weight="0.22484277" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878934" weight="0.32928178" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32625785" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2361111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49717513" visible="true" weight="0.2349138" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49717513" weight="0.14254144" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,8 +498,28 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3294025" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878934" weight="0.3294025" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2361111" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13385417" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49878934" visible="true" weight="0.32928178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49717513" visible="true" weight="0.2349138" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50282484" side_tool="true" weight="0.22484277" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32625785" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3294025" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -395,315 +575,371 @@
           <url>file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/containers/HomePage/index.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/containers/App/index.js</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/components/Header/index.js</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
+    <entry file="file://$PROJECT_DIR$/internals/generators/container/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960" />
+        <state relative-caret-position="272">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
+    <entry file="file://$PROJECT_DIR$/app/containers/NotFoundPage/Loadable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="281" column="22" lean-forward="true" selection-start-line="281" selection-start-column="22" selection-end-line="281" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260372">
-          <caret line="15316" column="6" lean-forward="true" selection-start-line="15316" selection-start-column="6" selection-end-line="15316" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/ISSUE_TEMPLATE.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/MAINTAINERS.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/actions/types.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/actions/homePageActions.js" />
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/HomePage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Loadable.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LanguageProvider/constants.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/NotFoundPage/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/NotFoundPage/messages.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LanguageProvider/selectors.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/FeaturePage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/App/index.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/FeaturePage/Loadable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#62#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Loadable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#67#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/App/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/App/constants.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/App/tests/index.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/App/tests/selectors.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/App/selectors.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/App/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
+        <state relative-caret-position="-616" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/selectors.js" />
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/js/redux-saga.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-490" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/js/redux.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/reducers.js">
+    <entry file="file://$PROJECT_DIR$/app/components/Header/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/configureStore.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LanguageProvider/actions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LanguageProvider/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/LanguageProvider/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#42#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/updateTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/messages.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/saga.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/store.js">
+    <entry file="file://$PROJECT_DIR$/app/translations/en.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/actions.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Section.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Table/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/CheckBox/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/App/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/ReposList/tests/index.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/InlineDiv/messages.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Header/HeaderLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Button/StyledButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/InlineDiv/StyledDiv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Button/Wrapper.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Button/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Button/buttonStyles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/A.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/buttonStyles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/data.js">
+    <entry file="file://$PROJECT_DIR$/app/components/InlineDiv/divStyles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/deletedData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/AtPrefix.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/CenteredSection.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Form.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/HomePage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding>
-            <element signature="e#343#369#0" expanded="true" />
+            <element signature="e#89#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/checkBox.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/tests/saga.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Button.js">
+    <entry file="file://$PROJECT_DIR$/app/components/InlineDiv/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="374">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#108#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/CenteredSection.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/AddDelete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/AddDelete.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Input.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Loadable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state>
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Table.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/sagas/index.js">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        <state>
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Components/component.css">
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/saga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/HomePage/Section.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="e#28#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/containers/QuotePage/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/HomeworkButton/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -128,8 +128,8 @@ module.exports = {
       // Reducer
       actions.push({
         type: 'add',
-        path: '../../app/containers/{{properCase name}}/index.js',
-        templateFile: './container/index.js.hbs',
+        path: '../../app/containers/{{properCase name}}/reducer.js',
+        templateFile: './container/reducer.js.hbs',
         abortOnFail: true,
       });
       actions.push({
