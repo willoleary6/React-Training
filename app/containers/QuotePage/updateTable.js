@@ -13,7 +13,7 @@ export default function updateTable(data){
   //whats left is the movie (Generally :P)
   var movie = stringResponse;
   //store variables as json.
-  var json = {'quote': quote, 'author': author, 'movie': movie};
+  var json = {'id':new Date().getTime(),'quote': quote, 'author': author, 'movie': movie};
   //add json to pre existing list of quotes.
   return json;
 

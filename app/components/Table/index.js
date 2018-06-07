@@ -10,25 +10,25 @@ import CheckBox from '../CheckBox';
 function Table(props){
   var date = new Date();
   var TableData =undefined;
+  var id = '';
   if(props.tableData!==null) {
-
-
-
-
-     //this level contains the collection of rows
-
-         //go through each row
-     TableData = Object.values(props.tableData).map(function(innerIndex,j){
-          return (
-          <Tr key={'row' + j + new Date().getTime()}>
+    TableData = props.tableData;
+    //go through each row
+     TableData = Object.values(TableData).map(function(innerIndex,j){
+       id = innerIndex.id;
+       return (
+           <Tr key={'row '+j+':'+innerIndex.id}>
             {
               //go through each Column
               Object.values(innerIndex).map(function (innerInnerIndex, k) {
-                return <Td key={'column' + k + new Date().getTime()}>{innerInnerIndex}</Td>;
+                //if its not equal to the id don't render
+                if(innerInnerIndex != id) {
+                  return <Td key={'column' + k}>{innerInnerIndex}</Td>;
+                }
               })
             }
             {
-              <Td><CheckBox id={'row'+innerIndex+'CheckBox'+new Date().getTime()}/></Td>
+              <Td><CheckBox id={id.toString()}/></Td>
             }
           </Tr>
           )
