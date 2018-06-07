@@ -39,24 +39,26 @@ class ViewTables extends Component{
     {
       //calling the two tables we will be displaying information on
       return(
-        <div>
+
+      <div>
+        <InlineDiv>
+          <Table
+            title="Add Table"
+            headers={this.sortHeaders(true)}
+            tableData={this.props.addTable}
+          />
+        </InlineDiv>
+        {
           <InlineDiv>
             <Table
-              title="Add Table"
-              headers={this.sortHeaders(true)}
-              tableData={this.props.addTable}
-              />
+              title="Delete Table"
+              headers={this.sortHeaders(false)}
+              tableData={this.props.deletedData}
+            />
           </InlineDiv>
-          {
-            <InlineDiv>
-              <Table
-                title="Delete Table"
-                headers={this.sortHeaders(false)}
-                tableData={this.props.deletedData}
-               />
-            </InlineDiv>
-          }
-        </div>
+        }
+      </div>
+
       )
       }
   }

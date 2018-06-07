@@ -9,10 +9,8 @@ import CheckBox from '../CheckBox';
 
 function Table(props){
   var date = new Date();
-  var timestamp = date.getTime();
   var TableData =undefined;
-
-   if(props.tableData) {
+  if(props.tableData!==null) {
 
 
 

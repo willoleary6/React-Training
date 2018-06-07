@@ -18,4 +18,6 @@ export const fetchQuote = ()=> ({type: FETCH_QUOTE});
 export const deleteQuote = ()=> ({type: DELETE_QUOTE});
 //going down to the UI
 export const receiveDeleteQuote = ()=> ({type: RECEIVE_DELETE_QUOTE});
-export const receiveQuote = data => ({type: RECEIVE_QUOTE,data});
+
+
+export const receiveQuote = quoteData => ({type: RECEIVE_QUOTE,quoteData});

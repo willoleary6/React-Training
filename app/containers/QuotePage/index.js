@@ -42,8 +42,15 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
                 <AddDelete/>
               </InlineDiv>
               <div>
-                <ViewTables addTable={this.props.data} deleteTable={this.props.deletedData}/>
-              </div>
+
+                {// <ViewTables addTable={this.props.data} deleteTable={this.props.deletedData}/>}
+                }
+                <h1>kjdfhasjdkfhsda {console.log(this.props.data)}</h1>
+
+
+
+            </div>
+
             </div>
         </CenteredSection>
       </div>
@@ -59,9 +66,8 @@ QuotePage.propTypes = {
 const mapStateToProps = createStructuredSelector({
 
   //quotepage: makeSelectQuotePage(),
-  data: makeSelectData(),
-  deletedData: makeSelectDeletedData(),
-  //data : makeSelectData()
+  //quotepage: makeSelectData(),
+  data : makeSelectData()
 
 });
 

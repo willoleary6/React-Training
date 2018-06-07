@@ -14,20 +14,44 @@ import {
   RECEIVE_QUOTE
 } from './constants';
 
-const initialState = fromJS({});
-var dataStore = [];
-var deletedDataStore = [];
+// The initial state of the App
+const initialState =
+  {
+data: [], a1:{}
+};
+
 
 function quotePageReducer(state = initialState, action) {
   switch (action.type) {
 
     case RECEIVE_QUOTE:
-      dataStore.push(updateTable(action.data));
+      //dataStore.push(updateTable(action.data));
+      //state.quotePage.quotePage.data.push(action.data);
+      //state.quotePage
+      console.log('JSON object');
+      console.log(JSON.stringify(state));
+      console.log('JSON object End');
 
-      return state
-        .set('data',dataStore)
 
-    case DELETE_QUOTE:
+    //  return state.setIn(['quotePage','data'],[action.quoteData]);
+
+      return {
+        ...state,
+        data: state.data.concat( action.quoteData)
+      }
+      //return [].concat(state.data, action.quoteData)
+//return state.set('data',action.quoteData);
+
+
+
+
+
+
+
+
+
+
+    /*case DELETE_QUOTE:
       try{
         if(dataStore.length > 0 && numberChecked() > 0) {
           moveToDeleted(dataStore,deletedDataStore);
@@ -41,7 +65,7 @@ function quotePageReducer(state = initialState, action) {
       }catch(e){
         console.log('failed to delete:'+ e);
       }
-
+*/
       case DEFAULT_ACTION:
     return state;
       //ensuring redux updates the components if we make press a button

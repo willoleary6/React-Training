@@ -3,6 +3,7 @@ import HomeworkButton from '../../components/HomeworkButton'
 import {bindActionCreators} from 'redux';
 import {fetchQuote,deleteQuote} from "./actions";
 import {connect} from 'react-redux';
+import {createStructuredSelector} from "reselect";
 
 function AddDelete(props){
   /* This component contains the two control buttons which
@@ -15,8 +16,8 @@ function AddDelete(props){
       )
 }
 //getting access to data in the store
-const mapStateToProps = state => (
-  {});
+const mapStateToProps = createStructuredSelector({
+});
 //getting access to functions in the store
 const mapDispatchToProps = dispatch =>
   bindActionCreators({fetchQuote,deleteQuote}, dispatch);
