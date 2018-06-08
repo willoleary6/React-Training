@@ -23,12 +23,16 @@ export const makeSelectData= () => createSelector(
     return  quotesPageState.data;
   }
 );
-export const makeAddToggle= () => createSelector(
+export const makeAddDisabler= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
     //returning the data element stored in 'quotePage'
-    return  quotesPageState.addButtonToggleValue;
+    return  quotesPageState.addButtonDisabler;
   }
 );
+
+
+
+
 

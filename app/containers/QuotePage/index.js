@@ -20,13 +20,14 @@ import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 import InlineDiv from '../../components/InlineDiv';
-import ViewTables from './ViewTables'
-import {fetchQuote, deleteQuote} from "./actions";
+import ViewTables from './ViewTables';
+
 
 export class QuotePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props){
     super(props);
   }
+
   render() {
     return (
       <div>
@@ -42,7 +43,9 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
                 <AddDelete/>
               </InlineDiv>
               <div>
-                <ViewTables addTable={this.props.data} />
+              </div>
+              <div>
+                <ViewTables addTable={this.props.data}/>
               </div>
             </div>
         </CenteredSection>
@@ -69,8 +72,6 @@ const mapStateToProps = createStructuredSelector({
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
-    fetchQuote,
-    deleteQuote
   };
 }
 

@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 
 import Th from '../../components/Th';
 import Table from '../../components/Table';
-import AddTable from '../../components/AddTable';
 import InlineDiv from '../../components/InlineDiv';
 import PropTypes from "prop-types";
+import AddTable from "../../components/AddTable";
 
 class ViewTables extends Component{
   constructor(props){
@@ -47,6 +47,7 @@ class ViewTables extends Component{
               title="Add Table"
               headers={this.sortHeaders(true)}
               tableData={this.props.addTable}
+
             />
           </InlineDiv>
 
@@ -63,5 +64,6 @@ ViewTables.propTypes = {
   deletedData:PropTypes.array
 };
 export default ViewTables;
+
 
 

@@ -5,7 +5,7 @@ import {fetchQuote,deleteQuote} from "./actions";
 import {connect} from 'react-redux';
 import {createStructuredSelector} from "reselect";
 import InlineDiv from '../../components/InlineDiv';
-import {makeSelectData, makeAddToggle} from "./selectors";
+import {makeSelectData, makeAddDisabler} from "./selectors";
 
 function AddDelete(props){
   /* This component contains the two control buttons which
@@ -13,7 +13,7 @@ function AddDelete(props){
     return (
        <div>
          <InlineDiv>
-          <HomeworkButton disabled={props.addButtonToggleValue} onClick ={props.fetchQuote} >add Quote</HomeworkButton>
+          <HomeworkButton disabled={props.addButtonDisabler} onClick ={props.fetchQuote} >add Quote</HomeworkButton>
          </InlineDiv>
          <InlineDiv>
            <HomeworkButton onClick ={props.deleteQuote}>Delete Selected</HomeworkButton>
@@ -23,7 +23,7 @@ function AddDelete(props){
 }
 //getting access to data in the store
 const mapStateToProps = createStructuredSelector({
-  addButtonToggleValue :makeAddToggle()
+  addButtonDisabler :makeAddDisabler()
 });
 //getting access to functions in the store
 const mapDispatchToProps = dispatch =>
