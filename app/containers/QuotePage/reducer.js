@@ -10,13 +10,15 @@ import formatTableData from './formatTableData';
 import moveToDeleted from './moveToDeleted';
 import numberChecked from './numberChecked';
 import {
+  ADD_BUTTON_TOGGLE,
   DEFAULT_ACTION, DELETE_QUOTE,
   RECEIVE_QUOTE
 } from './constants';
 
 // The initial state of the App
 const initialState = {
-  data: []
+  data: [],
+  addToggle: false
   };
 
 function quotePageReducer(state = initialState, action) {
@@ -24,12 +26,23 @@ function quotePageReducer(state = initialState, action) {
 
     case RECEIVE_QUOTE:
       //receiving quote from APi
-      return {
+
+      return{
         //state is a object containing data.
         ...state,
         //set data to equal the current value of data + our new data object
-        data: state.data.concat( action.quoteData)
+        data: state.data.concat(action.quoteData)
       }
+     case ADD_BUTTON_TOGGLE:
+      return{
+        ...state,
+        addButtonToggleValue: action.addButtonToggleValue
+      }
+       // state.addToggle.set(action.addToggle)
+
+     /*return state
+       .set('addToggle', true)
+*/
 
       /*case DELETE_QUOTE:
       try{

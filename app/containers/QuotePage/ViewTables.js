@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Th from '../../components/Th';
 import Table from '../../components/Table';
+import AddTable from '../../components/AddTable';
 import InlineDiv from '../../components/InlineDiv';
 import PropTypes from "prop-types";
 
@@ -42,7 +43,7 @@ class ViewTables extends Component{
 
         <div>
           <InlineDiv>
-            <Table
+            <AddTable
               title="Add Table"
               headers={this.sortHeaders(true)}
               tableData={this.props.addTable}

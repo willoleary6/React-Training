@@ -14,20 +14,14 @@ import StyledButton from './StyledButton';
 
 function HomeworkButton(props) {
   // Render an anchor tag
-  let button = (
-    <A href={props.href} onClick={props.onClick}>
-      {Children.toArray(props.children)}
-    </A>
-  );
 
-  // If the Button has a handleRoute prop, we want to render a button
-  if (props.handleRoute) {
-    button = (
-      <StyledButton onClick={props.handleRoute}>
+  let button = (
+    <StyledButton disabled={props.disabled} onClick={props.onClick} >
         {Children.toArray(props.children)}
-      </StyledButton>
+        </StyledButton>
     );
-  }
+
+
 
   return (
     button
@@ -39,6 +33,7 @@ HomeworkButton.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
+  disabled: PropTypes.bool,
 };
 
 export default HomeworkButton;

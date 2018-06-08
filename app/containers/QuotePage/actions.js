@@ -5,7 +5,7 @@
  */
 
 import {
-  DEFAULT_ACTION, DELETE_QUOTE, FETCH_QUOTE, RECEIVE_DELETE_QUOTE, RECEIVE_QUOTE,
+  DEFAULT_ACTION, DELETE_QUOTE, FETCH_QUOTE, RECEIVE_DELETE_QUOTE, RECEIVE_QUOTE,ADD_BUTTON_TOGGLE
 } from './constants';
 
 export function defaultAction() {
@@ -21,3 +21,5 @@ export const receiveDeleteQuote = ()=> ({type: RECEIVE_DELETE_QUOTE});
 
 
 export const receiveQuote = quoteData => ({type: RECEIVE_QUOTE,quoteData});
+
+export const addButtonToggle = addButtonToggleValue => ({type: ADD_BUTTON_TOGGLE,addButtonToggleValue});

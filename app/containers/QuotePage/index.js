@@ -44,7 +44,6 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
               <div>
                 <ViewTables addTable={this.props.data} />
               </div>
-
             </div>
         </CenteredSection>
       </div>

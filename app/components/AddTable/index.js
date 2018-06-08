@@ -7,10 +7,10 @@ import Tr from '../Tr';
 import Td from '../Td';
 import CheckBox from '../CheckBox';
 
-function Table(props){
+function AddTable(props){
   var TableData =undefined;
   var id = '';
-  if(props.tableData!==null) {
+  if(props.tableData!=[] && props.tableData!=undefined) {
     TableData = props.tableData;
     //go through each row
      TableData = Object.values(TableData).map(function(innerIndex,j){
@@ -25,6 +25,9 @@ function Table(props){
                   return <Td key={'row:' +j+' column: '+k+' id: '+id}>{innerInnerIndex}</Td>;
                 }
               })
+            }
+            {
+              <Td><CheckBox id={id.toString()}/></Td>
             }
           </Tr>
           )
@@ -47,48 +50,11 @@ function Table(props){
     </StyledTable>
   );
 }
-Table.propTypes = {
+AddTable.propTypes = {
   title: PropTypes.string,
   headers: PropTypes.array,
   tableData:PropTypes.array,
 };
-export default Table;
+export default AddTable;
 
-/*
 
-TableData = arr.map(function (index, i) {
-       return (
-         //go through each row
-         Object.values(index).map(function(innerIndex,j){
-          return (
-          <Tr key={'row' + j + new Date().getTime()}>
-            {
-              //go through each Column
-              Object.values(innerIndex).map(function (innerInnerIndex, k) {
-                return <Td key={'column' + k + new Date().getTime()}>{innerInnerIndex}</Td>;
-              })
-            }
-          </Tr>
-          )
-        })
-       )
-     })
-<StyledTable>
-      <caption>{props.title}</caption>
-      {
-        <Thead>
-            {
-              //print out table headers
-              props.headers
-            }
-        </Thead>
-      }
-      {
-        <Tbody>
-          {
-            TableData
-          }
-          </Tbody>
-      }
-    </StyledTable>
- */

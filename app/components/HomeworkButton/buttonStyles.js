@@ -3,11 +3,10 @@ import { css } from 'styled-components';
 const buttonStyles = css`
    color: #313131;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 45px;
     margin: 1em;
-    max-width: 160px;
     position: relative;
     border: 1px solid #656565;
     text-decoration: none;
@@ -21,6 +20,10 @@ const buttonStyles = css`
     border: 1px solid #437AF3;
     text-decoration: none;
     transition: all 250ms linear;
+  }
+  &:disabled {
+    color:white;
+    background: #fc0000;
   }
 `;
 
