@@ -5,6 +5,7 @@ import Table from '../../components/Table';
 import InlineDiv from '../../components/InlineDiv';
 import PropTypes from "prop-types";
 import AddTable from "../../components/AddTable";
+import DeleteTable from "../../components/DeleteTable";
 
 class ViewTables extends Component{
   constructor(props){
@@ -40,19 +41,20 @@ class ViewTables extends Component{
     {
       //calling the two tables we will be displaying information on
       return (
-
-        <div>
-          <InlineDiv>
+        <InlineDiv>
             <AddTable
               title="Add Table"
               headers={this.sortHeaders(true)}
               tableData={this.props.addTable}
-
+              onCheckBoxClicked={this.props.onCheckBoxClicked}
             />
-          </InlineDiv>
 
-        </div>
-
+            <DeleteTable
+              title="Delete Table"
+              headers={this.sortHeaders(false)}
+              tableData={this.props.deleteTable}
+            />
+        </InlineDiv>
       )
     }
   }
@@ -61,7 +63,8 @@ class ViewTables extends Component{
 ViewTables.propTypes = {
   headers: PropTypes.array,
   addTable:PropTypes.array,
-  deletedData:PropTypes.array
+  deleteTable:PropTypes.array,
+  onCheckBoxClicked:PropTypes.func
 };
 export default ViewTables;
 

@@ -10,17 +10,19 @@ import formatTableData from './formatTableData';
 import moveToDeleted from './moveToDeleted';
 import numberChecked from './numberChecked';
 import {
-  ADD_BUTTON_ENABLE,ADD_BUTTON_DISABLE,
-  DEFAULT_ACTION, DELETE_QUOTE,
-  RECEIVE_QUOTE
+  ADD_BUTTON_ENABLE, ADD_BUTTON_DISABLE,
+  DEFAULT_ACTION, CHECKBOX_CLICKED,
+  RECEIVE_QUOTE, DELETE_QUOTE
 } from './constants';
 import {CHANGE_USERNAME} from "../HomePage/constants";
 
 // The initial state of the App
 const initialState = {
   data: [],
-  addButtonDisabler: false
-  };
+  addButtonDisabler: false,
+  selectedRows: [],
+  deletedData : [],
+};
 
 function quotePageReducer(state = initialState, action) {
   switch (action.type) {
@@ -44,12 +46,37 @@ function quotePageReducer(state = initialState, action) {
         ...state,
         addButtonDisabler: true
       }
-
-
-  case DEFAULT_ACTION:
-    return state;
-    default:
-      return state;
+    case CHECKBOX_CLICKED:
+      var selectedRowsList = moveToDeleted(action.id,state.selectedRows);
+      return{
+        ...state,
+        selectedRows: selectedRowsList
+      }
+    case DELETE_QUOTE:
+      if(state.selectedRows.length > 0) {
+        var tempDataArray = [];
+        var tempDeletedDataArray = [];
+        for (var i = 0; i < state.data.length; i++) {
+          if (state.selectedRows.indexOf(state.data[i].id.toString()) > -1) {
+            tempDeletedDataArray.push(state.data[i]);
+          } else {
+            tempDataArray.push(state.data[i]);
+          }
+        }
+        return {
+          ...state,
+          deletedData: state.deletedData.concat(tempDeletedDataArray),
+          data: tempDataArray,
+          selectedRows: []
+        }
+      }else{
+        alert('No rows selected to be deleted');
+        return state;
+      }
+      case DEFAULT_ACTION:
+        return state;
+      default:
+        return state;
   }
 }
 

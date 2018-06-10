@@ -21,6 +21,8 @@ import saga from './saga';
 import messages from './messages';
 import InlineDiv from '../../components/InlineDiv';
 import ViewTables from './ViewTables';
+import CheckBox from '../../components/CheckBox';
+import {CheckBoxClicked} from "./actions";
 
 
 export class QuotePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -43,9 +45,7 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
                 <AddDelete/>
               </InlineDiv>
               <div>
-              </div>
-              <div>
-                <ViewTables addTable={this.props.data}/>
+                <ViewTables addTable={this.props.data} deleteTable={this.props.deleteData} onCheckBoxClicked = {this.props.onCheckBoxClicked}/>
               </div>
             </div>
         </CenteredSection>
@@ -56,22 +56,20 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
 
 QuotePage.propTypes = {
   dispatch: PropTypes.func.isRequired,
+  onCheckBoxClicked: PropTypes.func,
 };
 
 
 const mapStateToProps = createStructuredSelector({
   //linking the props between here and the store
-  data : makeSelectData()
-
+  data : makeSelectData(),
+  deleteData: makeSelectDeletedData()
 });
 
-/*const mapStateToProps = state => (
-  {data: state.data
-  });
-*/
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
+    onCheckBoxClicked: (evt) => dispatch(CheckBoxClicked(evt.target.id)),
   };
 }
 

@@ -1,14 +1,12 @@
-import uncheckAll from './uncheckAll';
-export default function moveToDeleted(dataStore,deletedDataStore){
-  var offset = 0;
-  var w = document.getElementsByTagName('input');
-  for(var i = 0; i < w.length; i++){
-    if(w[i].type=='checkbox' && w[i].checked){
-      deletedDataStore.push(dataStore[i-offset]);
-      dataStore.splice(i-offset, 1);
-      offset++;
-    }
-  }
-  uncheckAll();
+export default function moveToDeleted(currentID,selectedRows){
 
+  if(selectedRows.length < 1){
+    return [currentID];
+  }else if(!selectedRows.includes(currentID)){
+    selectedRows.push(currentID);
+    return selectedRows;
+  }else{
+    selectedRows.splice(selectedRows.indexOf(currentID),1);
+    return selectedRows;
+  }
 }

@@ -27,7 +27,7 @@ function AddTable(props){
               })
             }
             {
-              <Td><CheckBox id={id.toString()} onChange={() => props.onChecked(id)} /></Td>
+              <Td><CheckBox id={id} onChange={props.onCheckBoxClicked} /></Td>
             }
           </Tr>
           )
@@ -36,6 +36,7 @@ function AddTable(props){
 
   return(
     <StyledTable>
+        <caption>{props.title}</caption>
         <Thead>
         {
           //print out table headers
@@ -54,7 +55,7 @@ AddTable.propTypes = {
   title: PropTypes.string,
   headers: PropTypes.array,
   tableData:PropTypes.array,
-  onChecked: PropTypes.func,
+  onCheckBoxClicked: PropTypes.func,
 
 };
 export default AddTable;

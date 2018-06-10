@@ -1,7 +1,7 @@
 // import { take, call, put, select } from 'redux-saga/effects';
 import {call, put,takeLatest,take ,all} from 'redux-saga/effects';
-import {receiveQuote, deleteQuote, addButtonEnable, addButtonDisable} from './actions';
-import {FETCH_QUOTE,DELETE_QUOTE} from './constants';
+import {receiveQuote, addButtonEnable, addButtonDisable} from './actions';
+import {FETCH_QUOTE,} from './constants';
 import axios from 'axios';
 import updateTable from "./updateTable";
 
@@ -28,19 +28,10 @@ export function* fetchQuoteWatcher(){
 }
 
 
-function* deleteQuoteTrigger(){
-  yield call(deleteQuote);
-
-}
-export function* deleteQuoteWatcher(){
-  yield takeLatest(DELETE_QUOTE,deleteQuoteTrigger)
-}
-
 
 export default function* defaultSaga() {
   yield  all([
-    fetchQuoteWatcher(),
-    deleteQuoteWatcher()
+    fetchQuoteWatcher()
     ],
 
   );

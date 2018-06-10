@@ -10,7 +10,7 @@ import CheckBox from '../CheckBox';
 function DeleteTable(props){
   var TableData =undefined;
   var id = '';
-  if(props.tableData!==null) {
+  if(props.tableData!=[] && props.tableData!=undefined) {
     TableData = props.tableData;
     //go through each row
      TableData = Object.values(TableData).map(function(innerIndex,j){
@@ -33,6 +33,7 @@ function DeleteTable(props){
 
   return(
     <StyledTable>
+        <caption>{props.title}</caption>
         <Thead>
         {
           //print out table headers

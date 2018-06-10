@@ -12,4 +12,4 @@ export const RECEIVE_DELETE_QUOTE = 'app/QuotePage/RECEIVE_DELETE_QUOTE';
 export const ADD_BUTTON_ENABLE = 'app/QuotePage/ADD_BUTTON_ENABLE';
 export const ADD_BUTTON_DISABLE = 'app/QuotePage/ADD_BUTTON_DISABLE';
 
-export const ROW_CHECKED = 'app/QuotePage/ROW_CHECKED';
+export const CHECKBOX_CLICKED = 'boilerplate/Home/CHECKBOX_CLICKED';
