@@ -10,14 +10,14 @@ function AddDelete(props){
        <div>
          <InlineDiv>
           <HomeworkButton
-            disabled={props.addButtonState}
+            disabled={props.addButtonEnabled}
             onClick ={props.addButtonClicked}>
             add Quote
           </HomeworkButton>
          </InlineDiv>
          <InlineDiv>
            <HomeworkButton
-             disabled={props.deleteButtonState}
+             disabled={props.deleteButtonEnabled}
              onClick ={props.deleteButtonClicked}>
              Delete Selected
            </HomeworkButton>
@@ -26,8 +26,8 @@ function AddDelete(props){
       )
 }
 AddDelete.propTypes = {
-  addButtonState: PropTypes.bool,
-  deleteButtonState:PropTypes.bool,
+  addButtonEnabled: PropTypes.bool,
+  deleteButtonEnabled:PropTypes.bool,
   addButtonClicked:PropTypes.func,
   deleteButtonClicked:PropTypes.func
 };

@@ -36,7 +36,7 @@ export const addButtonState= () => createSelector(
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
     //returning the data element stored in 'quotePage'
-    return  quotesPageState.addButtonState;
+    return  quotesPageState.addButtonEnabled;
   }
 );
 export const deleteButtonState= () => createSelector(
@@ -44,7 +44,7 @@ export const deleteButtonState= () => createSelector(
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
     //returning the data element stored in 'quotePage'
-    return  quotesPageState.deleteButtonState;
+    return  quotesPageState.deleteButtonEnabled;
   }
 );
 

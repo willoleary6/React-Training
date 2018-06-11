@@ -42,9 +42,9 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
         <div>
           <InlineDiv>
             <AddDelete
-              addButtonState={this.props.addButtonState}
+              addButtonState={this.props.addButtonEnabled}
               addButtonClicked={this.props.addButtonClicked}
-              deleteButtonState={this.props.deleteButtonState}
+              deleteButtonState={this.props.deleteButtonEnabled}
               deleteButtonClicked={this.props.deleteButtonClicked}
             />
           </InlineDiv>
@@ -73,8 +73,8 @@ const mapStateToProps = createStructuredSelector({
   //linking the props between here and the store
   data: makeSelectData(),
   deleteData: makeSelectDeletedData(),
-  addButtonState :addButtonState(),
-  deleteButtonState :deleteButtonState()
+  addButtonEnabled :addButtonState(),
+  deleteButtonEnabled :deleteButtonState()
 });
 
 function mapDispatchToProps(dispatch) {

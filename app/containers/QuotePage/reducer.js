@@ -18,8 +18,8 @@ import {
 // The initial state of the App
 const initialState = {
   data: [],
-  addButtonState: false,
-  deleteButtonState: false,
+  addButtonEnabled: false,
+  deleteButtonEnabled: false,
   selectedRows: [],
   deletedData : [],
 };
@@ -39,23 +39,23 @@ function quotePageReducer(state = initialState, action) {
        //setting a value in the store
        return{
         ...state,
-         addButtonState: false
+         addButtonEnabled: false
       }
     case ADD_BUTTON_DISABLE:
       return{
         ...state,
-        addButtonState: true
+        addButtonEnabled: true
       }
     case DELETE_BUTTON_ENABLE:
       //setting a value in the store
       return{
         ...state,
-        deleteButtonState: false
+        deleteButtonEnabled: false
       }
     case DELETE_BUTTON_DISABLE:
       return{
         ...state,
-        deleteButtonState: true
+        deleteButtonEnabled: true
       }
     case CHECKBOX_CLICKED:
       var selectedRowsList = addRowToSelected(action.id,state.selectedRows);
