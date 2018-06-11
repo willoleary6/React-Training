@@ -65,9 +65,9 @@ function quotePageReducer(state = initialState, action) {
       }
     case DELETE_SELECTED_QUOTES:
       if(state.selectedRows.length > 0) {
-        var tempDataArray = [];
-        var tempDeletedDataArray = [];
-        for (var i = 0; i < state.data.length; i++) {
+        let tempDataArray = [];
+        let tempDeletedDataArray = [];
+        for (let i = 0; i < state.data.length; i++) {
           if (state.selectedRows.indexOf(state.data[i].id.toString()) > -1) {
             tempDeletedDataArray.push(state.data[i]);
           } else {

@@ -5,7 +5,8 @@ import {
   deleteButtonEnable,
   deleteButtonDisable,
   receiveQuote,
-  checkBoxClicked
+  checkBoxClicked,
+  deleteSelectedQuotes
 } from '../actions';
 
 
@@ -122,26 +123,23 @@ describe('quotePageReducer', () => {
   })
 
   it('should remove the quote from data', () => {
-    const fixture = 132343543;
     const previousState = {
       data: [{
         id: 132343543,
         quote: "'My God, it's the future. My parents, my co-workers, my girlfriend. I'll never see any of them again. YAHOO!!!'",
         author: "Fry",
         movie: "Futurama"
-        }],
-      addButtonEnabled: false,
-      deleteButtonEnabled: false,
-      selectedRows: [132343543],
-      deletedData : [],
+        }]
+      selectedRows:
+
     }
     const expectedResult = {
       //state is a object containing data.
-      ...state,
 
-      selectedRows: previousState.selectedRows.splice(previousState.selectedRows.indexOf(fixture),1)
+      data: []
+
     }
-    expect(quotePageReducer(previousState, checkBoxClicked(fixture))).toEqual(expectedResult);
+    expect(quotePageReducer(previousState, deleteSelectedQuotes())).toEqual(expectedResult);
   })
 
 })
