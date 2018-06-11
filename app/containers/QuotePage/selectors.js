@@ -31,15 +31,22 @@ export const makeSelectDeletedData= () => createSelector(
     return  quotesPageState.deletedData;
   }
 );
-export const makeAddDisabler= () => createSelector(
+export const addButtonState= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
     //returning the data element stored in 'quotePage'
-    return  quotesPageState.addButtonDisabler;
+    return  quotesPageState.addButtonState;
   }
 );
-
+export const deleteButtonState= () => createSelector(
+  selectQuotePage,
+  //declaring an object to stand in for 'quotePage'
+  (quotesPageState) => {
+    //returning the data element stored in 'quotePage'
+    return  quotesPageState.deleteButtonState;
+  }
+);
 
 
 

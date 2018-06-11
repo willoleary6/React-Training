@@ -1,4 +1,4 @@
-export default function moveToDeleted(currentID,selectedRows){
+export default function addRowToSelected(currentID,selectedRows){
 
   if(selectedRows.length < 1){
     return [currentID];

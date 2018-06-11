@@ -6,12 +6,14 @@
 
 import {
   DEFAULT_ACTION,
-  DELETE_QUOTE,
-  FETCH_QUOTE,
-  RECEIVE_DELETE_QUOTE,
+  DELETE_SELECTED_QUOTES,
+  DELETE_BUTTON_CLICKED,
+  ADD_BUTTON_CLICKED,
   RECEIVE_QUOTE,
   ADD_BUTTON_ENABLE,
   ADD_BUTTON_DISABLE,
+  DELETE_BUTTON_ENABLE,
+  DELETE_BUTTON_DISABLE,
   CHECKBOX_CLICKED
 } from './constants';
 
@@ -21,17 +23,16 @@ export function defaultAction() {
   };
 }
 //going up to the store
-export const fetchQuote = ()=> ({type: FETCH_QUOTE});
-
-
-export const deleteQuote = ()=> ({type: DELETE_QUOTE});
-//going down to the UI
-export const receiveDeleteQuote = ()=> ({type: RECEIVE_DELETE_QUOTE});
-
+export const addButtonClicked = ()=> ({type: ADD_BUTTON_CLICKED});
+export const deleteButtonClicked = ()=> ({type: DELETE_BUTTON_CLICKED});
 
 export const receiveQuote = quoteData => ({type: RECEIVE_QUOTE,quoteData});
+export const deleteSelectedQuotes = ()=> ({type: DELETE_SELECTED_QUOTES});
 
 export const addButtonEnable = () => ({type: ADD_BUTTON_ENABLE});
 export const addButtonDisable = () => ({type: ADD_BUTTON_DISABLE});
 
-export const CheckBoxClicked = id => ({type: CHECKBOX_CLICKED, id});
+export const deleteButtonEnable = () => ({type: DELETE_BUTTON_ENABLE});
+export const deleteButtonDisable = () => ({type: DELETE_BUTTON_DISABLE});
+
+export const checkBoxClicked = id => ({type: CHECKBOX_CLICKED, id});

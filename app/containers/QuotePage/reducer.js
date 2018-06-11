@@ -4,22 +4,22 @@
  *
  */
 
-import { fromJS } from 'immutable';
-import updateTable from './updateTable';
-import formatTableData from './formatTableData';
-import moveToDeleted from './moveToDeleted';
-import numberChecked from './numberChecked';
+
+
+import addRowToSelected from './addRowToSelected';
 import {
   ADD_BUTTON_ENABLE, ADD_BUTTON_DISABLE,
   DEFAULT_ACTION, CHECKBOX_CLICKED,
-  RECEIVE_QUOTE, DELETE_QUOTE
+  RECEIVE_QUOTE, DELETE_SELECTED_QUOTES,
+  DELETE_BUTTON_ENABLE,DELETE_BUTTON_DISABLE
 } from './constants';
-import {CHANGE_USERNAME} from "../HomePage/constants";
+
 
 // The initial state of the App
 const initialState = {
   data: [],
-  addButtonDisabler: false,
+  addButtonState: false,
+  deleteButtonState: false,
   selectedRows: [],
   deletedData : [],
 };
@@ -39,20 +39,31 @@ function quotePageReducer(state = initialState, action) {
        //setting a value in the store
        return{
         ...state,
-        addButtonDisabler: false
+         addButtonState: false
       }
     case ADD_BUTTON_DISABLE:
       return{
         ...state,
-        addButtonDisabler: true
+        addButtonState: true
+      }
+    case DELETE_BUTTON_ENABLE:
+      //setting a value in the store
+      return{
+        ...state,
+        deleteButtonState: false
+      }
+    case DELETE_BUTTON_DISABLE:
+      return{
+        ...state,
+        deleteButtonState: true
       }
     case CHECKBOX_CLICKED:
-      var selectedRowsList = moveToDeleted(action.id,state.selectedRows);
+      var selectedRowsList = addRowToSelected(action.id,state.selectedRows);
       return{
         ...state,
         selectedRows: selectedRowsList
       }
-    case DELETE_QUOTE:
+    case DELETE_SELECTED_QUOTES:
       if(state.selectedRows.length > 0) {
         var tempDataArray = [];
         var tempDeletedDataArray = [];
