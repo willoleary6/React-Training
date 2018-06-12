@@ -9,15 +9,17 @@
 import addRowToSelected from './addRowToSelected';
 import {
   ADD_BUTTON_ENABLE, ADD_BUTTON_DISABLE,
-  DEFAULT_ACTION, CHECKBOX_CLICKED,
-  RECEIVE_QUOTE, DELETE_SELECTED_QUOTES,
-  DELETE_BUTTON_ENABLE,DELETE_BUTTON_DISABLE
+  CHECKBOX_CLICKED, RECEIVE_QUOTE,
+  DELETE_BUTTON_ENABLE,DELETE_BUTTON_DISABLE,
+  MOVE_SELECTED_QUOTES_TO_DELETED,
+  REMOVE_SELECTED_QUOTES_FROM_DATA,
+  CLEAR_SELECTED_QUOTES
 } from './constants';
 
 
 // The initial state of the App
 const initialState = {
-  data: [],
+  addedQuotes: [],
   addButtonEnabled: false,
   deleteButtonEnabled: false,
   selectedRows: [],
@@ -30,10 +32,10 @@ function quotePageReducer(state = initialState, action) {
       //receiving quote from APi
       //adding a value to the array
       return{
-        //state is a object containing data.
+        //state is a object containing addedQuotes.
         ...state,
-        //set data to equal the current value of data + our new data object
-        data: state.data.concat(action.quoteData)
+        //set addedQuotes to equal the current value of addedQuotes + our new addedQuotes object
+        addedQuotes: state.addedQuotes.concat(action.quoteData)
       }
      case ADD_BUTTON_ENABLE:
        //setting a value in the store
@@ -63,29 +65,42 @@ function quotePageReducer(state = initialState, action) {
         ...state,
         selectedRows: selectedRowsList
       }
-    case DELETE_SELECTED_QUOTES:
-      if(state.selectedRows.length > 0) {
-        let tempDataArray = [];
-        let tempDeletedDataArray = [];
-        for (let i = 0; i < state.data.length; i++) {
-          if (state.selectedRows.indexOf(state.data[i].id.toString()) > -1) {
-            tempDeletedDataArray.push(state.data[i]);
-          } else {
-            tempDataArray.push(state.data[i]);
+    case MOVE_SELECTED_QUOTES_TO_DELETED:
+      if(state.selectedRows.length > 0){
+        let selectedRows = state.selectedRows;
+        let addedQuotes = state.addedQuotes;
+        let filtered = state.deletedData.concat(addedQuotes.filter(function(quote){
+          if(selectedRows.indexOf(quote.id) > -1){
+            return quote;
           }
-        }
+        }));
+
         return {
           ...state,
-          deletedData: state.deletedData.concat(tempDeletedDataArray),
-          data: tempDataArray,
-          selectedRows: []
+          deletedData: filtered
         }
       }else{
         alert('No rows selected to be deleted');
-        return state;
       }
-      case DEFAULT_ACTION:
-        return state;
+    case REMOVE_SELECTED_QUOTES_FROM_DATA:
+      if(state.selectedRows.length > 0){
+       let selectedRows = state.selectedRows;
+       let filtered = state.addedQuotes.filter(function(addedDataElement){
+
+          if(selectedRows.indexOf(addedDataElement.id) < 0){
+            return addedDataElement;
+          }});
+
+        return{
+          ...state,
+          addedQuotes: filtered
+          }
+      }
+    case CLEAR_SELECTED_QUOTES:
+      return{
+        ...state,
+        selectedRows: []
+      }
       default:
         return state;
   }

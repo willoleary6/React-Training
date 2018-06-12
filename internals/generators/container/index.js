@@ -38,7 +38,7 @@ module.exports = {
     type: 'confirm',
     name: 'wantSaga',
     default: true,
-    message: 'Do you want sagas for asynchronous flows? (e.g. fetching data)',
+    message: 'Do you want sagas for asynchronous flows? (e.g. fetching addedQuotes)',
   }, {
     type: 'confirm',
     name: 'wantMessages',

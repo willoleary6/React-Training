@@ -86,7 +86,7 @@ Your production site isn't working? You update the code and nothing changes? It 
 
 To fix it on your local browser, just do the following. (Suited when you're testing the production mode locally)
 
-`Chrome dev tools > Application > Clear Storage > Clear site data` *(Chrome)*
+`Chrome dev tools > Application > Clear Storage > Clear site addedQuotes` *(Chrome)*
 
 #### Full in-depth explanation
 

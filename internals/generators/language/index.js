@@ -35,7 +35,7 @@ module.exports = {
       type: 'modify',
       path: '../../app/i18n.js',
       pattern: /('react-intl\/locale-data\/[a-z]+';\n)(?!.*'react-intl\/locale-data\/[a-z]+';)/g,
-      templateFile: './language/intl-locale-data.hbs',
+      templateFile: './language/intl-locale-addedQuotes.hbs',
     });
     actions.push({
       type: 'modify',
@@ -53,7 +53,7 @@ module.exports = {
       type: 'modify',
       path: '../../app/i18n.js',
       pattern: /(addLocaleData\([a-z]+LocaleData\);\n)(?!.*addLocaleData\([a-z]+LocaleData\);)/g,
-      templateFile: './language/add-locale-data.hbs',
+      templateFile: './language/add-locale-addedQuotes.hbs',
     });
     actions.push({
       type: 'modify',

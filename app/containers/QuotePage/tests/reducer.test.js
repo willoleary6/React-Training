@@ -6,7 +6,9 @@ import {
   deleteButtonDisable,
   receiveQuote,
   checkBoxClicked,
-  deleteSelectedQuotes
+  moveSelectedQuotesToDeleted,
+  removeSelectedQuotesFromData,
+  clearSelectedQuotes
 } from '../actions';
 
 
@@ -14,7 +16,7 @@ describe('quotePageReducer', () => {
   let state;
   beforeEach(() => {
     state = {
-        data: [],
+        addedQuotes: [],
         addButtonEnabled: false,
         deleteButtonEnabled: false,
         selectedRows: [],
@@ -29,17 +31,17 @@ describe('quotePageReducer', () => {
   it('should handle the add quote action action correctly', () => {
     const fixture = "'It's your old friend, deadly neurotoxin. If I were you, I'd take a deep breath. And hold it.' -GLaDOS, Portal 2";
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
-      //set data to equal the current value of data + our new data object
-      data: state.data.concat(fixture)
+      //set addedQuotes to equal the current value of addedQuotes + our new addedQuotes object
+      addedQuotes: state.addedQuotes.concat(fixture)
     }
     expect(quotePageReducer(state, receiveQuote(fixture))).toEqual(expectedResult);
   });
 
   it('should set the value of addButtonEnabled to true', () => {
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
       addButtonEnabled: true
     }
@@ -49,7 +51,7 @@ describe('quotePageReducer', () => {
   it('should set the value of addButtonEnabled to false', () => {
     const expectedResult = {
 
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
       addButtonEnabled: false
     }
@@ -59,7 +61,7 @@ describe('quotePageReducer', () => {
 
   it('should set the value of deleteButtonEnabled to false', () => {
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
       deleteButtonEnabled: false
     }
@@ -69,7 +71,7 @@ describe('quotePageReducer', () => {
 
   it('should set the value of deleteButtonEnabled to true', () => {
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
       deleteButtonEnabled: true
     }
@@ -79,7 +81,7 @@ describe('quotePageReducer', () => {
   it('should set the selectedRows array to store a single variable', () => {
     const fixture = 2465154568;
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
       selectedRows: [fixture]
     }
@@ -89,16 +91,16 @@ describe('quotePageReducer', () => {
   it('should push to the array to store more row IDs', () => {
     const fixture = 2465154568;
     const previousState = {
-      data: [],
+      addedQuotes: [],
       addButtonEnabled: false,
       deleteButtonEnabled: false,
       selectedRows: [132343543],
       deletedData : [],
     }
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
-      //set data to equal the current value of selectedRows + our new row id
+      //set addedQuotes to equal the current value of selectedRows + our new row id
       selectedRows: previousState.selectedRows.concat(fixture)
     }
     expect(quotePageReducer(previousState, checkBoxClicked(fixture))).toEqual(expectedResult);
@@ -107,14 +109,14 @@ describe('quotePageReducer', () => {
   it('should remove itself from the array since it found it already is stored there', () => {
     const fixture = 132343543;
     const previousState = {
-      data: [],
+      addedQuotes: [],
       addButtonEnabled: false,
       deleteButtonEnabled: false,
       selectedRows: [132343543],
       deletedData : [],
     }
     const expectedResult = {
-      //state is a object containing data.
+      //state is a object containing addedQuotes.
       ...state,
 
       selectedRows: previousState.selectedRows.splice(previousState.selectedRows.indexOf(fixture),1)
@@ -122,24 +124,72 @@ describe('quotePageReducer', () => {
     expect(quotePageReducer(previousState, checkBoxClicked(fixture))).toEqual(expectedResult);
   })
 
-  it('should remove the quote from data', () => {
-    const previousState = {
-      data: [{
+  it('Should add selected Quotes to deleted', () => {
+    const initialState = {
+      addedQuotes: [{
         id: 132343543,
         quote: "'My God, it's the future. My parents, my co-workers, my girlfriend. I'll never see any of them again. YAHOO!!!'",
         author: "Fry",
         movie: "Futurama"
-        }]
-      selectedRows:
-
+        }],
+      selectedRows: [132343543],
+      deletedData: [],
     }
     const expectedResult = {
-      //state is a object containing data.
+      addedQuotes: [{
+        id: 132343543,
+        quote: "'My God, it's the future. My parents, my co-workers, my girlfriend. I'll never see any of them again. YAHOO!!!'",
+        author: "Fry",
+        movie: "Futurama"
+      }],
+      selectedRows: [132343543],
+      deletedData: [{
+        id: 132343543,
+        quote: "'My God, it's the future. My parents, my co-workers, my girlfriend. I'll never see any of them again. YAHOO!!!'",
+        author: "Fry",
+        movie: "Futurama"
+      }],
+      }
 
-      data: []
-
-    }
-    expect(quotePageReducer(previousState, deleteSelectedQuotes())).toEqual(expectedResult);
+    expect(quotePageReducer(initialState, moveSelectedQuotesToDeleted())).toEqual(expectedResult);
   })
 
+  it('Should Remove the selected Quotes from the added table', () => {
+    const mockState = {
+      addedQuotes: [{
+        id: 1234,
+        quote: "'My God, it's the future. My parents, my co-workers, my girlfriend. I'll never see any of them again. YAHOO!!!'",
+        author: "Fry",
+        movie: "Futurama"
+      }],
+      selectedRows: [1234],
+      deletedData: [],
+      addButtonEnabled: false,
+      deleteButtonEnabled: false,
+    }
+    const expectedResult = {
+      addedQuotes: [],
+      selectedRows: [1234],
+      deletedData: [],
+      addButtonEnabled: false,
+      deleteButtonEnabled: false,
+    }
+
+    expect(quotePageReducer(mockState, removeSelectedQuotesFromData())).toEqual(expectedResult);
+  })
+
+  it('Should Remove the selected Quotes from the added table', () => {
+    const mockState = {
+      selectedRows: [1234],
+    }
+    const expectedResult = {
+      selectedRows: [],
+    }
+    expect(quotePageReducer(mockState, clearSelectedQuotes())).toEqual(expectedResult);
+  })
+
+
+
+
 })
+

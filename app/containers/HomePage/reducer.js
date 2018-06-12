@@ -1,7 +1,7 @@
 /*
  * HomeReducer
  *
- * The reducer takes care of our data. Using actions, we can change our
+ * The reducer takes care of our addedQuotes. Using actions, we can change our
  * application state.
  * To add a new action, add it to the switch statement in the reducer function
  *

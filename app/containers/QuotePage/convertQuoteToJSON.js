@@ -11,7 +11,7 @@ export default function convertQuoteToJSON(quoteReceived){
   var movie = stringResponse.match(/(^.*)-(.*)?,(.*)?/)[3];
 
   //store variables as json.
-  var json = {'id':new Date().getTime(),'quote': quote.trim(), 'author': author.trim(), 'movie': movie.trim()};
+  var json = {'id': new Date().getTime(),'quote': quote.trim(), 'author': author.trim(), 'movie': movie.trim()};
   //add json to pre existing list of quotes.
   return json;
 

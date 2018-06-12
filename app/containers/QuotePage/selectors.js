@@ -14,20 +14,20 @@ export const selectQuotePage = (state) => state.get('quotePage');
 /**
  * Default selector used by QuotePage
  */
-//getting the 'data' element in the store
+//getting the 'addedQuotes' element in the store
 export const makeSelectData= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
-    //returning the data element stored in 'quotePage'
-    return  quotesPageState.data;
+    //returning the addedQuotes element stored in 'quotePage'
+    return  quotesPageState.addedQuotes;
   }
 );
 export const makeSelectDeletedData= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
-    //returning the data element stored in 'quotePage'
+    //returning the addedQuotes element stored in 'quotePage'
     return  quotesPageState.deletedData;
   }
 );
@@ -35,7 +35,7 @@ export const addButtonState= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
-    //returning the data element stored in 'quotePage'
+    //returning the addedQuotes element stored in 'quotePage'
     return  quotesPageState.addButtonEnabled;
   }
 );
@@ -43,7 +43,7 @@ export const deleteButtonState= () => createSelector(
   selectQuotePage,
   //declaring an object to stand in for 'quotePage'
   (quotesPageState) => {
-    //returning the data element stored in 'quotePage'
+    //returning the addedQuotes element stored in 'quotePage'
     return  quotesPageState.deleteButtonEnabled;
   }
 );

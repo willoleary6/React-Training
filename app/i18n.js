@@ -1,7 +1,7 @@
 /**
  * i18n.js
  *
- * This will setup the i18n language files and locale data for your app.
+ * This will setup the i18n language files and locale addedQuotes for your app.
  *
  */
 import { addLocaleData } from 'react-intl';

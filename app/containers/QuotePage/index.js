@@ -50,7 +50,7 @@ export class QuotePage extends React.PureComponent { // eslint-disable-line reac
           </InlineDiv>
           <div>
             <ViewTables
-              addTable={this.props.data}
+              addTable={this.props.addedQuotes}
               deleteTable={this.props.deleteData}
               onCheckBoxClicked={this.props.onCheckBoxClicked}/>
           </div>
@@ -71,7 +71,7 @@ QuotePage.propTypes = {
 
 const mapStateToProps = createStructuredSelector({
   //linking the props between here and the store
-  data: makeSelectData(),
+  addedQuotes: makeSelectData(),
   deleteData: makeSelectDeletedData(),
   addButtonEnabled :addButtonState(),
   deleteButtonEnabled :deleteButtonState()

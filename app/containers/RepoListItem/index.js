@@ -22,7 +22,7 @@ export class RepoListItem extends React.PureComponent { // eslint-disable-line r
     const item = this.props.item;
     let nameprefix = '';
 
-    // If the repository is owned by a different person than we got the data for
+    // If the repository is owned by a different person than we got the addedQuotes for
     // it's a fork and we should show the name of the owner
     if (item.owner.login !== this.props.currentUser) {
       nameprefix = `${item.owner.login}/`;

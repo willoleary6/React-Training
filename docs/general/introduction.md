@@ -50,7 +50,7 @@ If not, here's the TL;DR:
 
 ### `app/`
 
-We use the [container/component architecture](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.4rmjqneiw). `containers/` contains React components which are connected to the redux store. `components/` contains dumb React components which depend on containers for data. **Container components care about how things work, while components care about how things look.**
+We use the [container/component architecture](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.4rmjqneiw). `containers/` contains React components which are connected to the redux store. `components/` contains dumb React components which depend on containers for addedQuotes. **Container components care about how things work, while components care about how things look.**
 
 We've found that for many applications treating single pages (e.g. the Loginpage, the Homepage etc.) as containers and their small parts (e.g. the Login form, the Navigation bar) as components works well, but there are no rigid rules. **Bend the architecture to the needs of your app, nothing is set in stone!**
 
@@ -124,7 +124,7 @@ The store is created with the `createStore()` factory, which accepts three param
 In our application we are using two such middleware.
 
 1. **Router middleware:** Keeps your routes in sync with the redux `store`.
-2. **Redux saga:** Is used for managing _side-effects_ such as dispatching actions asynchronously or accessing browser data.
+2. **Redux saga:** Is used for managing _side-effects_ such as dispatching actions asynchronously or accessing browser addedQuotes.
 
 ### Reselect
 
@@ -151,12 +151,12 @@ Let's see how the three features of reselect help.
 
 ### Redux Saga
 
-If your application is going to interact with some back-end application for data, we recommend using redux saga for side effect management. Too much jargon? Let's simplify.
+If your application is going to interact with some back-end application for addedQuotes, we recommend using redux saga for side effect management. Too much jargon? Let's simplify.
 
-Imagine that your application is fetching data in json format from a back-end. For every API call, ideally you should define at least three kinds of [action creators](http://redux.js.org/docs/basics/Actions.html):
+Imagine that your application is fetching addedQuotes in json format from a back-end. For every API call, ideally you should define at least three kinds of [action creators](http://redux.js.org/docs/basics/Actions.html):
 
 1. `API_REQUEST`: Upon dispatching this, your application should show a spinner to let the user know that something's happening.
-2. `API_SUCCESS`: Upon dispatching this, your application should show the data to the user.
+2. `API_SUCCESS`: Upon dispatching this, your application should show the addedQuotes to the user.
 3. `API_FAILURE`: Upon dispatching this, your application should show an error message to the user.
 
 And this is only for **_one_** API call. In a real-world scenario, one page of your application could be making tens of API calls. How do we manage all of them effectively? This essentially boils down to controlling the flow of your application. What if there was a background process that handles multiple actions simultaneously, communicates with redux store and react containers at the same time? This is where redux-saga comes into the picture.
@@ -179,17 +179,17 @@ Run `npm start` to launch the application. If you start browsing at [https://loc
 
 - `mapDispatchToProps()`: Generally, we provide outgoing action creators (functions that create [action](http://redux.js.org/docs/basics/Actions.html) objects) to the react component through this method. Notice that for every keypress in textbox, your state will be updated by dispatching a `changeUsername` action to the store. So at any point in time, your Redux state will hold the currently typed username. When you submit the form, another action, `loadRepos` will be dispatched.
 
-- `mapStateToProps()`: Generally, we provide incoming state from Redux store to the react component through this method. Notice that the we do not provide the entire state to the component, simply because we don't want the react component to have access to irrelevant data. The state will be filtered by selectors such as `selectRepos`, `selectUsername` etc.
+- `mapStateToProps()`: Generally, we provide incoming state from Redux store to the react component through this method. Notice that the we do not provide the entire state to the component, simply because we don't want the react component to have access to irrelevant addedQuotes. The state will be filtered by selectors such as `selectRepos`, `selectUsername` etc.
 
 Together these two methods work like magic. When you type something in the textbox the following things will happen in a sequential manner:
 
 1. `changeUsername()` will send text to the Redux store. The text can be accessed using `evt.target.value`. Here, `evt` is the `onChange` event emmited by pressing a key.
-2. The Redux store will consult with its corresponding reducer, since a reducer knows what to do with the data.
-3. When a reducer computes a new state tree, the store will update its state with the newly typed data.
-4. An update has occured in the state, therefore `mapStateToProps()` will be triggered and your react component will get the new data.
-5. The updated data will be set as the `value` to your `<Input />`.
+2. The Redux store will consult with its corresponding reducer, since a reducer knows what to do with the addedQuotes.
+3. When a reducer computes a new state tree, the store will update its state with the newly typed addedQuotes.
+4. An update has occured in the state, therefore `mapStateToProps()` will be triggered and your react component will get the new addedQuotes.
+5. The updated addedQuotes will be set as the `value` to your `<Input />`.
 
-_So you see, if you type something in the textbox, it will not be directly reflected in the DOM. It must pass through redux. Redux will update the state and return it to the component. It's the component's responsibility to show the updated data._
+_So you see, if you type something in the textbox, it will not be directly reflected in the DOM. It must pass through redux. Redux will update the state and return it to the component. It's the component's responsibility to show the updated addedQuotes._
 
 #### `HomePage/saga.js`
 
@@ -201,9 +201,9 @@ Check out [`HomePage/saga.js`](https://github.com/react-boilerplate/react-boiler
 
 - You can `fork` a saga to send it to the background. That way, your code will not get blocked even when the saga is continuously running.
 - `takeLatest` is used for listening for a particular action. In this case, it will wait for a `LOAD_REPOS` action. Whenever you disptach this action, the saga will understand that you want to fetch repos from github's public API by calling `getRepos()`.
-- If the API successfully returns some data, a `reposLoaded()` action will be dispatched which carries the data. When redux store receives this action, [a reducer](https://github.com/react-boilerplate/react-boilerplate/blob/master/app/containers/App/reducer.js) will set incoming data in the new state tree.
+- If the API successfully returns some addedQuotes, a `reposLoaded()` action will be dispatched which carries the addedQuotes. When redux store receives this action, [a reducer](https://github.com/react-boilerplate/react-boilerplate/blob/master/app/containers/App/reducer.js) will set incoming addedQuotes in the new state tree.
 
-_An update has occurred!_ `mapStateToProps()` will be triggered. `<HomePage />` will receive the new data and rerender.
+_An update has occurred!_ `mapStateToProps()` will be triggered. `<HomePage />` will receive the new addedQuotes and rerender.
 
 ## Why all this fuss just to load a list of repos?
 

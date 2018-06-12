@@ -20,7 +20,7 @@ We may include SSR in a future version, but for now this is our focus... create-
 ### Breaking
 
 - **Upgrade React Router to v4.x.x** (@anuraaga, @Dattaya, et al)
-  - Use React-Loadable for data lifecycle management
+  - Use React-Loadable for addedQuotes lifecycle management
   - Refactor `asyncInjectors`: improve code splitting/saga management
   - For a complete overview of changes, please see #1746
 

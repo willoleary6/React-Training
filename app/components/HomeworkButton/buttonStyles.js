@@ -23,7 +23,7 @@ const buttonStyles = css`
   }
   &:disabled {
     color:white;
-    background: #fc0000;
+    background: #D6D6D6;
   }
 `;
 

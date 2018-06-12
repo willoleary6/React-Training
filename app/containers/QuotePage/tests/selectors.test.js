@@ -20,13 +20,13 @@ describe('selectData', () => {
 
 describe('makeSelectData', () => {
 
-  it('should select the data', () => {
+  it('should select the addedQuotes', () => {
     const data = fromJS({
-      quotePage: {data:[]},
+      quotePage: {addedQuotes:[]},
     });
     const mockedState = fromJS({
       quotePage: {
-        data:data,
+        addedQuotes:data,
       },
     });
     expect(makeSelectData(mockedState)).toEqual(data);

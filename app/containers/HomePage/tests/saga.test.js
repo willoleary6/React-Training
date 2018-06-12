@@ -27,7 +27,7 @@ describe('getRepos Saga', () => {
     expect(callDescriptor).toMatchSnapshot();
   });
 
-  it('should dispatch the reposLoaded action if it requests the data successfully', () => {
+  it('should dispatch the reposLoaded action if it requests the addedQuotes successfully', () => {
     const response = [{
       name: 'First repo',
     }, {

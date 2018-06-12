@@ -1,6 +1,6 @@
 # ImmutableJS
 
-Immutable data structures can be deeply compared in no time. This allows us to
+Immutable addedQuotes structures can be deeply compared in no time. This allows us to
 efficiently determine if our components need to rerender since we know if the
 `props` changed or not!
 
@@ -9,9 +9,9 @@ for a good explanation of the more intricate benefits it has.
 
 ## Usage
 
-In our reducers, we make the initial state an immutable data structure with the
+In our reducers, we make the initial state an immutable addedQuotes structure with the
 `fromJS` function. We pass it an object or an array, and it takes care of
-converting it to a immutable data structure. (Note: the conversion is performed deeply so
+converting it to a immutable addedQuotes structure. (Note: the conversion is performed deeply so
 that even arbitrarily nested arrays/objects are immutable structures too!)
 
 ```JS
@@ -27,7 +27,7 @@ const initialState = fromJS({
 
 
 When a reducer is subscribed to an action and needs to return the new state they can do so by using setter methods such as [`.set`](https://facebook.github.io/immutable-js/docs/#/Map/set) and [`.update`](https://facebook.github.io/immutable-js/docs/#/Map/update) and [`.merge`](https://facebook.github.io/immutable-js/docs/#/Map/merge).  
-If the changing state data is nested, we can utilize the 'deep' versions of these setters: [`.setIn`](https://facebook.github.io/immutable-js/docs/#/Map/setIn) and [`.updateIn`](https://facebook.github.io/immutable-js/docs/#/Map/updateIn), [`.mergeIn`](https://facebook.github.io/immutable-js/docs/#/Map/mergeIn).
+If the changing state addedQuotes is nested, we can utilize the 'deep' versions of these setters: [`.setIn`](https://facebook.github.io/immutable-js/docs/#/Map/setIn) and [`.updateIn`](https://facebook.github.io/immutable-js/docs/#/Map/updateIn), [`.mergeIn`](https://facebook.github.io/immutable-js/docs/#/Map/mergeIn).
 
 ```JS
 import { SOME_ACTION, SOME_OTHER_ACTION } from './actions';
